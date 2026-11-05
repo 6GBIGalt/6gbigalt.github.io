@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clone Netflix, étude de cas | Greg Gargiulo</title>
+<meta name="description" content="Une interface FlutterFlow sur une base qui vérifie les droits ligne par ligne. Étude de cas : stack, décisions et résultats.">
+<link rel="canonical" href="https://6gbigalt.github.io/projets/netflix-flutterflow/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Clone Netflix, étude de cas | Greg Gargiulo">
+<meta property="og:description" content="Une interface FlutterFlow sur une base qui vérifie les droits ligne par ligne. Étude de cas : stack, décisions et résultats.">
+<meta property="og:url" content="https://6gbigalt.github.io/projets/netflix-flutterflow/">
+<meta property="og:image" content="https://6gbigalt.github.io/assets/og/netflix-flutterflow.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clone Netflix. Une interface FlutterFlow sur une base qui vérifie les droits ligne par ligne">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fafafa">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css?v=a170d63965">
+<link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
+<script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
+<script src="../../assets/js/site.js?v=5cea7b4c63" defer></script>
+<script type="speculationrules">{"prerender":[{"where":{"href_matches":"/projets/*"},"eagerness":"moderate"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://6gbigalt.github.io/#greg","name":"Greg Gargiulo","jobTitle":"AI product builder & développeur full stack","email":"mailto:greg.gargiulo.pro@gmail.com","url":"https://6gbigalt.github.io/","sameAs":["https://www.linkedin.com/in/g-gargiulo/"],"knowsAbout":["Applications métier","Agents IA","Automatisation","React","TypeScript","Python","FastAPI","n8n","Flutter"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://6gbigalt.github.io/"},{"@type":"ListItem","position":2,"name":"Clone Netflix","item":"https://6gbigalt.github.io/projets/netflix-flutterflow/"}]}]}</script>
+</head>
+<body class="page-case">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="hdr">
+  <a class="hdr-name" href="../../">Greg Gargiulo</a>
+  <nav class="hdr-nav" aria-label="Navigation principale">
+    <a href="../../#projets">Projets</a>
+    <a href="../../#methode">Méthode</a>
+    <a href="../../#parcours">Parcours</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV</a>
+  </nav>
+  <div class="hdr-right">
+    <a class="btn" href="mailto:greg.gargiulo.pro@gmail.com">M’écrire</a>
+    <button type="button" class="toggle" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <nav class="menu-nav" aria-label="Menu">
+    <ul role="list">
+      <li style="--i:0"><a href="../../#projets">Projets</a></li>
+      <li style="--i:1"><a href="../../#methode">Méthode</a></li>
+      <li style="--i:2"><a href="../../#parcours">Parcours</a></li>
+      <li style="--i:3"><a href="../../#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-foot">
+    <a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a>
+    <a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a>
+  </div>
+</div>
+<main id="contenu">
+<article class="case">
+<header class="case-intro">
+  <div class="wrap case-intro-inner">
+    <a class="btn back" href="../../"><span class="back-arrow" aria-hidden="true"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>Retour</a>
+    <div class="case-titlerow">
+      <h1 class="case-title">Clone Netflix.</h1>
+      <p class="case-year"><span class="visually-hidden">Année : </span>2026</p>
+    </div>
+    <p class="case-outcome">Une interface FlutterFlow sur une base qui vérifie les droits ligne par ligne</p>
+  </div>
+</header>
+
+<section class="showcase showcase--case" aria-label="Les écrans du projet">
+  <div class="wrap">
+    <div class="reel" data-motion="time">
+      <div class="reel-frame" aria-hidden="true">
+        <div class="reel-slide" data-outcome="Trois parcours : du lancement au choix du profil, de l’accueil à la fiche d’un film, et la recherche triée.">
+          <div class="stage stage--phones stage--reel" style="--tone:#a1141b;--on:#fafafa" aria-hidden="true"><div class="phones"><div class="handset"><img class="phone" src="../../assets/captures/netflix-flutterflow/splash-phone.webp" srcset="../../assets/captures/netflix-flutterflow/splash-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/splash-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/netflix-flutterflow/splash-screen.webp ../../assets/captures/netflix-flutterflow/onboarding-screen.webp ../../assets/captures/netflix-flutterflow/inscription-screen.webp ../../assets/captures/netflix-flutterflow/profils-screen.webp" data-span="3" style="--loop:9.6s"></div></div></div><div class="handset"><img class="phone" src="../../assets/captures/netflix-flutterflow/accueil-phone.webp" srcset="../../assets/captures/netflix-flutterflow/accueil-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/accueil-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/netflix-flutterflow/accueil-screen.webp ../../assets/captures/netflix-flutterflow/fiche-screen.webp" data-span="1" style="--loop:4.8s;--m-delay:-1.2s"></div></div></div><div class="handset"><img class="phone" src="../../assets/captures/netflix-flutterflow/recherche-phone.webp" srcset="../../assets/captures/netflix-flutterflow/recherche-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/recherche-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/netflix-flutterflow/recherche-screen.webp ../../assets/captures/netflix-flutterflow/tri-screen.webp" data-span="1" style="--loop:4.8s;--m-delay:-2.4s"></div></div></div></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="Écran de présentation, création de compte avec validation des champs, choix du profil.">
+          <div class="stage stage--phones stage--reel" style="--tone:#a1141b;--on:#fafafa" aria-hidden="true"><div class="phones"><img class="phone" src="../../assets/captures/netflix-flutterflow/onboarding-phone.webp" srcset="../../assets/captures/netflix-flutterflow/onboarding-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/onboarding-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><img class="phone" src="../../assets/captures/netflix-flutterflow/inscription-phone.webp" srcset="../../assets/captures/netflix-flutterflow/inscription-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/inscription-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><img class="phone" src="../../assets/captures/netflix-flutterflow/profils-phone.webp" srcset="../../assets/captures/netflix-flutterflow/profils-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/profils-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="La recherche triée de A à Z, et le formulaire d’ajout d’un film.">
+          <div class="stage stage--phones stage--reel" style="--tone:#a1141b;--on:#fafafa" aria-hidden="true"><div class="phones"><img class="phone" src="../../assets/captures/netflix-flutterflow/tri-phone.webp" srcset="../../assets/captures/netflix-flutterflow/tri-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/tri-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><img class="phone" src="../../assets/captures/netflix-flutterflow/ajout-phone.webp" srcset="../../assets/captures/netflix-flutterflow/ajout-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/ajout-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="lazy" decoding="async"></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="Les règles de sécurité au niveau des lignes, dans Supabase.">
+          <div class="stage stage--browser stage--reel" style="--tone:#a1141b;--on:#fafafa" aria-hidden="true"><div class="tablet" style="--screen:#121414"><img class="is-wide" src="../../assets/captures/netflix-flutterflow/rls-ui.webp" srcset="../../assets/captures/netflix-flutterflow/rls-ui.w480.webp 480w, ../../assets/captures/netflix-flutterflow/rls-ui.webp 1049w" sizes="(min-width: 900px) 92vw, 100vw" alt="" width="1049" height="553" loading="lazy" decoding="async"></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="Trois des quatre triggers, dans Supabase ; celui de l’inscription est posé sur la table des comptes d’authentification.">
+          <div class="stage stage--browser stage--reel" style="--tone:#a1141b;--on:#fafafa" aria-hidden="true"><div class="tablet" style="--screen:#121414"><img class="is-wide" src="../../assets/captures/netflix-flutterflow/triggers-ui.webp" srcset="../../assets/captures/netflix-flutterflow/triggers-ui.w480.webp 480w, ../../assets/captures/netflix-flutterflow/triggers-ui.webp 1158w" sizes="(min-width: 900px) 92vw, 100vw" alt="" width="1158" height="485" loading="lazy" decoding="async"></div></div>
+        </div>
+      </div>
+      <div class="reel-bar">
+        <p class="reel-caption">Trois parcours : du lancement au choix du profil, de l’accueil à la fiche d’un film, et la recherche triée.</p>
+        <p class="reel-status visually-hidden" role="status"></p>
+        <div class="reel-ctrl">
+          <button type="button" class="arrow reel-pause" aria-label="Mettre les animations en pause"><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 3v10M10.5 3v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3.2l8 4.8-8 4.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+          <span class="reel-count" aria-hidden="true">1 / 5</span>
+          <div class="arrows reel-arrows">
+            <button type="button" class="arrow arrow--prev" data-dir="-1" aria-label="Écran précédent"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+            <button type="button" class="arrow" data-dir="1" aria-label="Écran suivant"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Sommaire de l’étude">
+  <div class="wrap">
+    <ul class="toc-list" role="list"><li><a href="#fiche">Fiche</a></li><li><a href="#livrables">Livrables</a></li><li><a href="#architecture">Architecture</a></li><li><a href="#stack">Stack technique</a></li><li><a href="#decisions">Décisions</a></li><li><a href="#resultats">Résultats</a></li></ul>
+  </div>
+</nav>
+
+<section class="overview" id="fiche" aria-label="Présentation du projet">
+  <div class="wrap overview-grid">
+    <div class="overview-side">
+      <h2 class="label">Fiche</h2>
+      <dl class="facts">
+          <div><dt>Rôle</dt><dd>Conception et développement</dd></div>
+          <div><dt>Équipe</dt><dd>Seul, en formation Alegria Academy</dd></div>
+          <div><dt>Période</dt><dd>Octobre 2026</dd></div>
+          <div><dt>Statut</dt><dd>Rendu</dd></div>
+          <div><dt>Code</dt><dd>Projet pédagogique</dd></div>
+          <div><dt>Captures</dt><dd>Écrans de l’application extraits de la vidéo de présentation du projet et posés dans un cadre d’iPhone ; règles et triggers capturés dans Supabase.</dd></div>
+      </dl>
+    </div>
+    <div class="overview-main">
+      <h2 class="label">En bref</h2>
+      <p class="overview-lead">Un exercice de la formation Alegria Academy, que j’ai réalisé seul : reproduire le parcours de Netflix avec FlutterFlow pour l’interface, et Supabase pour la base, l’authentification et le stockage des affiches. La logique est écrite dans la base PostgreSQL : un schéma relationnel, des règles de sécurité au niveau des lignes et des triggers qui complètent les données d’eux-mêmes.</p>
+      <h2 class="label">Point de départ</h2>
+      <p class="overview-text">L’exercice imposait un outil sans code pour l’interface. Or une règle posée dans l’interface se contourne en appelant la base directement. J’ai donc placé les règles dans la base.</p>
+      <h3 class="label">Contraintes</h3>
+      <ul class="constraints" role="list"><li>Des droits qui tiennent même si l’application est contournée.</li><li>Des affiches envoyées par les utilisateurs, à limiter en taille et en format.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="tech" aria-label="Livrables, architecture et stack technique">
+  <div class="wrap">
+    <div class="spec" id="livrables">
+      <h2 class="spec-title">Livrables</h2>
+      <ul class="spec-list" role="list"><li>Les écrans de l’application : présentation, inscription et connexion, choix du profil, accueil par catégories, fiche d’un film, recherche et ajout d’un film.</li><li>Le schéma de la base : utilisateurs, films, catégories et profils de visionnage.</li><li>Neuf règles de sécurité au niveau des lignes et quatre triggers.</li><li>Des fonctions Dart personnalisées : couleur de fond tirée de la base, recherche insensible à la casse.</li><li>Cinq scripts SQL versionnés, qui créent le schéma, les règles de sécurité, les triggers et les données de démonstration.</li></ul>
+    </div>
+    <div class="spec" id="architecture">
+      <h2 class="spec-title">Architecture</h2>
+      <div class="spec-text"><p>FlutterFlow génère l’application Flutter. Supabase porte la base PostgreSQL, l’authentification et le stockage des affiches. Les droits sont appliqués dans la base par des politiques RLS, et des triggers complètent les données à l’inscription et à chaque ajout ou modification d’un film.</p><p>La base compte quatre tables : les utilisateurs, liés au compte d’authentification et supprimés avec lui ; les catégories ; les films ; les profils de visionnage. La couleur de chaque film est contrôlée par la base (un code hexadécimal valide ou rien), et deux index servent les listes par catégorie et par date d’ajout.</p></div>
+    </div>
+    <div class="spec" id="stack">
+      <h2 class="spec-title">Stack technique</h2>
+      <dl class="stack-table">
+          <div><dt>Langages</dt><dd><ul class="tags" role="list"><li>Dart</li><li>SQL</li></ul></dd></div>
+          <div><dt>Interface</dt><dd><ul class="tags" role="list"><li>FlutterFlow</li></ul></dd></div>
+          <div><dt>Données et stockage</dt><dd><ul class="tags" role="list"><li>Supabase (PostgreSQL)</li><li>Supabase Storage</li></ul></dd></div>
+          <div><dt>Authentification</dt><dd><ul class="tags" role="list"><li>Supabase Auth</li></ul></dd></div>
+          <div><dt>Règles en base</dt><dd><ul class="tags" role="list"><li>Row Level Security</li><li>Triggers PL/pgSQL</li></ul></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="steps-section steps-section--case" id="decisions" aria-labelledby="decisions-titre">
+  <div class="wrap">
+    <div class="steps-grid">
+      <div class="steps-side">
+        <h2 id="decisions-titre" class="h-section">Décisions</h2>
+      </div>
+      <ol class="steps" role="list">
+          <li class="step">
+            <h3 class="step-title">Le parcours complet d’un abonné</h3>
+            <div class="step-body"><p>L’application enchaîne l’écran de présentation, l’inscription et la connexion, avec validation des champs, puis le choix du profil et la fiche d’un film avec sa bande-annonce. La couleur de fond de chaque fiche est lue dans la base.</p></div>
+            <div class="step-media"><figure class="shot shot--phones" data-motion="time">
+          <div class="stage stage--phones" style="--tone:#a1141b;--on:#fafafa"><div class="phones"><img class="phone" src="../../assets/captures/netflix-flutterflow/onboarding-phone.webp" srcset="../../assets/captures/netflix-flutterflow/onboarding-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/onboarding-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><img class="phone" src="../../assets/captures/netflix-flutterflow/inscription-phone.webp" srcset="../../assets/captures/netflix-flutterflow/inscription-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/inscription-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><img class="phone" src="../../assets/captures/netflix-flutterflow/profils-phone.webp" srcset="../../assets/captures/netflix-flutterflow/profils-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/profils-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"></div></div>
+          <figcaption>Écran de présentation, création de compte avec validation des champs, choix du profil.</figcaption>
+        </figure></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">Recherche, tri et ajout de films</h3>
+            <div class="step-body"><p>La recherche filtre à chaque lettre, sans tenir compte des majuscules, avec un tri par date d’ajout ou par ordre alphabétique. Un formulaire ajoute un film, son affiche et sa catégorie.</p></div>
+            <div class="step-media"><figure class="shot shot--phones" data-motion="time">
+          <div class="stage stage--phones" style="--tone:#a1141b;--on:#fafafa"><div class="phones"><img class="phone" src="../../assets/captures/netflix-flutterflow/tri-phone.webp" srcset="../../assets/captures/netflix-flutterflow/tri-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/tri-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><img class="phone" src="../../assets/captures/netflix-flutterflow/ajout-phone.webp" srcset="../../assets/captures/netflix-flutterflow/ajout-phone.w480.webp 480w, ../../assets/captures/netflix-flutterflow/ajout-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"></div></div>
+          <figcaption>La recherche triée de A à Z, et le formulaire d’ajout d’un film.</figcaption>
+        </figure></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">Chacun ne modifie que ses propres données</h3>
+            <div class="step-body"><p>Chaque utilisateur ne lit et ne modifie que sa propre fiche et ses propres profils. Le catalogue est lisible par tout utilisateur connecté ; un film ne peut être ajouté qu’au nom de l’utilisateur connecté, et seul son auteur peut le modifier ou le supprimer.</p><p>Ces règles sont vérifiées par PostgreSQL à chaque requête : elles s’appliquent donc aussi à un appel envoyé à la base sans passer par l’application. Les affiches, elles, vont dans un espace de stockage qui limite la taille et le format des fichiers.</p></div>
+            <div class="step-media"><figure class="shot shot--browser" data-motion="time">
+          <div class="stage stage--browser" style="--tone:#a1141b;--on:#fafafa"><div class="tablet" style="--screen:#121414"><img class="is-wide" src="../../assets/captures/netflix-flutterflow/rls-ui.webp" srcset="../../assets/captures/netflix-flutterflow/rls-ui.w480.webp 480w, ../../assets/captures/netflix-flutterflow/rls-ui.webp 1049w" sizes="(min-width: 900px) 62vw, 92vw" alt="" width="1049" height="553" loading="lazy" decoding="async"></div></div>
+          <figcaption>Les règles de sécurité au niveau des lignes, dans Supabase.</figcaption>
+        </figure></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">Une base qui se complète d’elle-même</h3>
+            <div class="step-body"><p>À l’inscription, un trigger crée la fiche de l’utilisateur et son premier profil de visionnage, et un autre reporte ensuite son nom sur ce profil. Un troisième convertit le nom de catégorie envoyé par le formulaire en clé étrangère, car la liste déroulante de FlutterFlow ne manipule que du texte ; un quatrième donne au film une affiche par défaut quand il n’en a pas. L’interface n’a donc rien à calculer.</p></div>
+            <div class="step-media"><figure class="shot shot--browser" data-motion="time">
+          <div class="stage stage--browser" style="--tone:#a1141b;--on:#fafafa"><div class="tablet" style="--screen:#121414"><img class="is-wide" src="../../assets/captures/netflix-flutterflow/triggers-ui.webp" srcset="../../assets/captures/netflix-flutterflow/triggers-ui.w480.webp 480w, ../../assets/captures/netflix-flutterflow/triggers-ui.webp 1158w" sizes="(min-width: 900px) 62vw, 92vw" alt="" width="1158" height="485" loading="lazy" decoding="async"></div></div>
+          <figcaption>Trois des quatre triggers, dans Supabase ; celui de l’inscription est posé sur la table des comptes d’authentification.</figcaption>
+        </figure></div>
+          </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="resultats" aria-labelledby="resultats-titre">
+  <div class="wrap">
+    <h2 id="resultats-titre" class="h-section">Résultats</h2>
+    <dl class="figures figures--3"><div><dt>9</dt><dd>règles de sécurité au niveau des lignes, sur quatre tables et le stockage</dd></div><div><dt>5</dt><dd>scripts SQL versionnés : schéma, données de démonstration et triggers</dd></div><div><dt>14</dt><dd>films dans le catalogue de démonstration</dd></div></dl>
+    <p class="results-text">Projet rendu avec une vidéo de présentation de l’application.</p>
+  </div>
+</section>
+
+<nav class="next" aria-label="Projets suivant et précédent">
+  <div class="wrap">
+    <a class="next-link" href="../../projets/erp-circulegg/">
+      <span class="next-text">
+        <span class="next-label">Projet suivant <span class="next-count">1 / 9</span></span>
+        <span class="next-name">ERP Circul’Egg.<span class="next-arrow"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></span>
+        <span class="next-outcome">L’atelier trace chaque lot sur téléphone, de la réception des coquilles à l’expédition</span>
+      </span>
+      <div class="next-shot" data-motion="time"><div class="stage stage--phones stage--slide" style="--tone:#2eb2a4;--on:#0c0c0d" aria-hidden="true"><div class="phones"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/reception-phone.webp" srcset="../../assets/captures/erp-circulegg/reception-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/reception-phone.webp 960w" sizes="(min-width: 900px) 12vw, 26vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/reception-screen.webp ../../assets/captures/erp-circulegg/bigbag-screen.webp ../../assets/captures/erp-circulegg/ensachage-screen.webp ../../assets/captures/erp-circulegg/expedition-screen.webp" data-span="3" style="--loop:9.6s"></div></div></div><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/sechage-phone.webp" srcset="../../assets/captures/erp-circulegg/sechage-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/sechage-phone.webp 960w" sizes="(min-width: 900px) 12vw, 26vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--page" data-src="../../assets/captures/erp-circulegg/sechage-page.webp" data-srcset="../../assets/captures/erp-circulegg/sechage-page.webp 390w" data-sizes="(min-width: 900px) 20vw, 40vw" style="--loop:8s"></div></div></div><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/cuves-phone.webp" srcset="../../assets/captures/erp-circulegg/cuves-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/cuves-phone.webp 960w" sizes="(min-width: 900px) 12vw, 26vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--page" data-src="../../assets/captures/erp-circulegg/cuves-page.webp" data-srcset="../../assets/captures/erp-circulegg/cuves-page.webp 390w" data-sizes="(min-width: 900px) 20vw, 40vw" style="--loop:8s"></div></div></div></div></div></div>
+    </a>
+    <div class="next-more">
+      <a class="ulink" href="../../projets/diagnostic-data-ia/">Projet précédent : Diagnostic Data &amp; IA</a>
+      <a class="ulink" href="../../#projets">Tous les projets</a>
+    </div>
+  </div>
+</nav>
+</article>
+</main>
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <p class="foot-kicker">Vous recrutez ?</p>
+    <a class="foot-big" href="mailto:greg.gargiulo.pro@gmail.com" data-reveal><span class="w"><span style="--i:0">M’écrire.<span class="foot-arrow"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 3.5l16.5 16.5M20 7v13H7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></span></span></a>
+    <p class="foot-text">Je cherche un CDI de développeur full stack, d’applications et d’agents IA, ou en automatisation. Mon alternance se termine en janvier 2027 : je suis disponible à partir de ce mois-là, à Paris ou en Île-⁠de-⁠France, sur site, en hybride ou à distance.</p>
+    <div class="foot-cols">
+      <ul role="list">
+        <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        
+      </ul>
+      <ul role="list">
+        <li><a href="../../#projets">Projets</a></li>
+        <li><a href="../../#methode">Méthode</a></li>
+        <li><a href="../../#parcours">Parcours</a></li>
+      </ul>
+      <ul role="list">
+        <li><a href="../../portfolio.json">Portfolio en JSON</a></li>
+        <li>Sans traceur ni cookie</li>
+      </ul>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Greg Gargiulo</span>
+      <span>Mis à jour le 5 novembre 2026</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

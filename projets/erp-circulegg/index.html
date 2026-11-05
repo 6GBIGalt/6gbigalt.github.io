@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERP Circul’Egg, étude de cas | Greg Gargiulo</title>
+<meta name="description" content="L’atelier trace chaque lot sur téléphone, de la réception des coquilles à l’expédition. Étude de cas : stack, décisions et résultats.">
+<link rel="canonical" href="https://6gbigalt.github.io/projets/erp-circulegg/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ERP Circul’Egg, étude de cas | Greg Gargiulo">
+<meta property="og:description" content="L’atelier trace chaque lot sur téléphone, de la réception des coquilles à l’expédition. Étude de cas : stack, décisions et résultats.">
+<meta property="og:url" content="https://6gbigalt.github.io/projets/erp-circulegg/">
+<meta property="og:image" content="https://6gbigalt.github.io/assets/og/erp-circulegg.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ERP Circul’Egg. L’atelier trace chaque lot sur téléphone, de la réception des coquilles à l’expédition">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fafafa">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css?v=a170d63965">
+<link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
+<script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
+<script src="../../assets/js/site.js?v=5cea7b4c63" defer></script>
+<script type="speculationrules">{"prerender":[{"where":{"href_matches":"/projets/*"},"eagerness":"moderate"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://6gbigalt.github.io/#greg","name":"Greg Gargiulo","jobTitle":"AI product builder & développeur full stack","email":"mailto:greg.gargiulo.pro@gmail.com","url":"https://6gbigalt.github.io/","sameAs":["https://www.linkedin.com/in/g-gargiulo/"],"knowsAbout":["Applications métier","Agents IA","Automatisation","React","TypeScript","Python","FastAPI","n8n","Flutter"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://6gbigalt.github.io/"},{"@type":"ListItem","position":2,"name":"ERP Circul'Egg","item":"https://6gbigalt.github.io/projets/erp-circulegg/"}]}]}</script>
+</head>
+<body class="page-case">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="hdr">
+  <a class="hdr-name" href="../../">Greg Gargiulo</a>
+  <nav class="hdr-nav" aria-label="Navigation principale">
+    <a href="../../#projets">Projets</a>
+    <a href="../../#methode">Méthode</a>
+    <a href="../../#parcours">Parcours</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV</a>
+  </nav>
+  <div class="hdr-right">
+    <a class="btn" href="mailto:greg.gargiulo.pro@gmail.com">M’écrire</a>
+    <button type="button" class="toggle" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <nav class="menu-nav" aria-label="Menu">
+    <ul role="list">
+      <li style="--i:0"><a href="../../#projets">Projets</a></li>
+      <li style="--i:1"><a href="../../#methode">Méthode</a></li>
+      <li style="--i:2"><a href="../../#parcours">Parcours</a></li>
+      <li style="--i:3"><a href="../../#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-foot">
+    <a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a>
+    <a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a>
+  </div>
+</div>
+<main id="contenu">
+<article class="case">
+<header class="case-intro">
+  <div class="wrap case-intro-inner">
+    <a class="btn back" href="../../"><span class="back-arrow" aria-hidden="true"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>Retour</a>
+    <div class="case-titlerow">
+      <h1 class="case-title">ERP Circul’Egg.</h1>
+      <p class="case-year"><span class="visually-hidden">Année : </span>2026</p>
+    </div>
+    <p class="case-outcome">L’atelier trace chaque lot sur téléphone, de la réception des coquilles à l’expédition</p>
+  </div>
+</header>
+
+<section class="showcase showcase--case" aria-label="Les écrans du projet">
+  <div class="wrap">
+    <div class="reel" data-motion="time">
+      <div class="reel-frame" aria-hidden="true">
+        <div class="reel-slide" data-outcome="Trois écrans d’opérateur : le parcours d’un lot de la réception à l’expédition, un séchage en cours, l’état des cuves.">
+          <div class="stage stage--phones stage--reel" style="--tone:#2eb2a4;--on:#0c0c0d" aria-hidden="true"><div class="phones"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/reception-phone.webp" srcset="../../assets/captures/erp-circulegg/reception-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/reception-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/reception-screen.webp ../../assets/captures/erp-circulegg/bigbag-screen.webp ../../assets/captures/erp-circulegg/ensachage-screen.webp ../../assets/captures/erp-circulegg/expedition-screen.webp" data-span="3" style="--loop:9.6s"></div></div></div><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/sechage-phone.webp" srcset="../../assets/captures/erp-circulegg/sechage-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/sechage-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--page" data-src="../../assets/captures/erp-circulegg/sechage-page.webp" data-srcset="../../assets/captures/erp-circulegg/sechage-page.webp 390w" data-sizes="(min-width: 900px) 20vw, 40vw" style="--loop:8s"></div></div></div><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/cuves-phone.webp" srcset="../../assets/captures/erp-circulegg/cuves-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/cuves-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--page" data-src="../../assets/captures/erp-circulegg/cuves-page.webp" data-srcset="../../assets/captures/erp-circulegg/cuves-page.webp 390w" data-sizes="(min-width: 900px) 20vw, 40vw" style="--loop:8s"></div></div></div></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="Fin de séchage : la cuve, l’heure d’arrêt et les quantités, puis un seul bouton.">
+          <div class="stage stage--phone stage--reel" style="--tone:#2eb2a4;--on:#0c0c0d" aria-hidden="true"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/cloture-phone.webp" srcset="../../assets/captures/erp-circulegg/cloture-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/cloture-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/arret-screen.webp ../../assets/captures/erp-circulegg/cloture-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="La libération d’un lot : la fiche de contrôle, puis l’écran de décision.">
+          <div class="stage stage--phone stage--reel" style="--tone:#2eb2a4;--on:#0c0c0d" aria-hidden="true"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/liberation-phone.webp" srcset="../../assets/captures/erp-circulegg/liberation-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/liberation-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/liberation-fiche-screen.webp ../../assets/captures/erp-circulegg/liberation-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
+        </div>
+      </div>
+      <div class="reel-bar">
+        <p class="reel-caption">Trois écrans d’opérateur : le parcours d’un lot de la réception à l’expédition, un séchage en cours, l’état des cuves.</p>
+        <p class="reel-status visually-hidden" role="status"></p>
+        <div class="reel-ctrl">
+          <button type="button" class="arrow reel-pause" aria-label="Mettre les animations en pause"><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 3v10M10.5 3v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3.2l8 4.8-8 4.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+          <span class="reel-count" aria-hidden="true">1 / 3</span>
+          <div class="arrows reel-arrows">
+            <button type="button" class="arrow arrow--prev" data-dir="-1" aria-label="Écran précédent"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+            <button type="button" class="arrow" data-dir="1" aria-label="Écran suivant"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Sommaire de l’étude">
+  <div class="wrap">
+    <ul class="toc-list" role="list"><li><a href="#fiche">Fiche</a></li><li><a href="#livrables">Livrables</a></li><li><a href="#architecture">Architecture</a></li><li><a href="#stack">Stack technique</a></li><li><a href="#decisions">Décisions</a></li><li><a href="#resultats">Résultats</a></li></ul>
+  </div>
+</nav>
+
+<section class="overview" id="fiche" aria-label="Présentation du projet">
+  <div class="wrap overview-grid">
+    <div class="overview-side">
+      <h2 class="label">Fiche</h2>
+      <dl class="facts">
+          <div><dt>Rôle</dt><dd>Conception et développement, seul développeur, avec des agents de code (Claude Code)</dd></div>
+          <div><dt>Équipe</dt><dd>Le dirigeant pour les arbitrages, les responsables qualité et production pour la recette</dd></div>
+          <div><dt>Période</dt><dd>Mai à octobre 2026, puis évolutions</dd></div>
+          <div><dt>Statut</dt><dd>En production depuis le 5 octobre 2026</dd></div>
+          <div><dt>Code</dt><dd>Privé, dépôt de l’entreprise</dd></div>
+          <div><dt>Captures</dt><dd>Écrans des guides utilisateurs, réalisés sur des comptes de test ; codes de lots neutralisés, paramètres machine et cibles qualité masqués.</dd></div>
+      </dl>
+    </div>
+    <div class="overview-main">
+      <h2 class="label">En bref</h2>
+      <p class="overview-lead">Circul’Egg, biotech lauréate du Grand Prix 2023 de l’Académie des technologies, transforme les coquilles d’œufs en ingrédients pour l’industrie. J’ai conçu et développé seul, avec des agents de code, son ERP de production, une application web qui s’installe sur les téléphones de l’atelier et continue de fonctionner sans réseau. Depuis le 5 octobre 2026, les opérateurs y saisissent chaque étape de la fabrication, et la qualité y valide chaque lot avant son départ.</p>
+      <h2 class="label">Point de départ</h2>
+      <p class="overview-text">La production se suivait sur papier et dans des fichiers Excel. Pour savoir de quel lot de coquilles venait une expédition, il fallait recouper des fiches à la main. Et aucun lot ne pouvait partir sans une décision de la qualité, consignée elle aussi sur papier.</p>
+      <h3 class="label">Contraintes</h3>
+      <ul class="constraints" role="list"><li>Un atelier où l’on travaille avec des gants, et où le réseau ne passe pas partout.</li><li>Garder Airtable, déjà en place, comme base de données, et n’ajouter aucun serveur à maintenir.</li><li>Des quotas à respecter : appels à l’API Airtable, fonctions Vercel, minutes d’intégration continue.</li><li>Un seul développeur, et une mise en service planifiée avec la direction.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="tech" aria-label="Livrables, architecture et stack technique">
+  <div class="wrap">
+    <div class="spec" id="livrables">
+      <h2 class="spec-title">Livrables</h2>
+      <ul class="spec-list" role="list"><li>Les parcours de chaque poste : réception, séchage, broyage, libération qualité, ensachage, expédition, arrêts machine.</li><li>Quatre espaces selon le rôle : opérateur, production, qualité et direction ; des tableaux de bord et des exports mensuels pour les trois derniers.</li><li>Une base Airtable de 31 tables, documentée table par table.</li><li>Une file de synchronisation hors ligne, et trois fonctions serverless qui gardent la clé d’accès à la base.</li><li>Le calcul du verdict qualité et le classement couleur des poudres.</li><li>Une sauvegarde nocturne des données, du schéma et des photos, avec une procédure de restauration testée.</li><li>Des tests unitaires et de bout en bout, lancés à chaque envoi de code.</li><li>Quatre guides utilisateurs en PDF et des feuilles de poste imprimables.</li></ul>
+    </div>
+    <div class="spec" id="architecture">
+      <h2 class="spec-title">Architecture</h2>
+      <div class="spec-text"><p>Une application web progressive en React et TypeScript, installée sur les téléphones de l’atelier. Chaque saisie est d’abord écrite dans IndexedDB, sur le téléphone, puis envoyée par une file de synchronisation à des fonctions serverless sur Vercel, seules à détenir la clé Airtable. Airtable sert de base de données, et d’outil de consultation pour la direction.</p><p>Trois fonctions partagent le même cœur de proxy : l’accès aux tables, l’envoi des photos et l’authentification par code PIN. Le service worker installe les mises à jour de lui-même, mais seulement sur l’accueil ou sur l’écran de connexion, jamais pendant une saisie en cours.</p><p>Les plafonds d’abonnement sont traités comme une contrainte technique. Pendant le développement, le mois le plus chargé a consommé 5 716 appels à l’API Airtable, soit 5,7 % du plafond ; une mise en cache de deux minutes des indicateurs de l’accueil a ensuite divisé par sept environ les requêtes envoyées à chaque retour sur cet écran. Fin septembre, le plus sollicité des compteurs d’usage Vercel restait à 2 % de son plafond.</p></div>
+    </div>
+    <div class="spec" id="stack">
+      <h2 class="spec-title">Stack technique</h2>
+      <dl class="stack-table">
+          <div><dt>Langages</dt><dd><ul class="tags" role="list"><li>TypeScript</li></ul></dd></div>
+          <div><dt>Interface</dt><dd><ul class="tags" role="list"><li>React</li><li>React Router</li><li>Tailwind CSS</li><li>PWA (vite-plugin-pwa)</li></ul></dd></div>
+          <div><dt>Serveur</dt><dd><ul class="tags" role="list"><li>Fonctions serverless Vercel (Node.js)</li></ul></dd></div>
+          <div><dt>Bases de données</dt><dd><ul class="tags" role="list"><li>Airtable</li><li>IndexedDB (Dexie)</li></ul></dd></div>
+          <div><dt>Documents générés</dt><dd><ul class="tags" role="list"><li>jsPDF</li><li>write-excel-file</li></ul></dd></div>
+          <div><dt>Infrastructure</dt><dd><ul class="tags" role="list"><li>Vite</li><li>Vercel</li><li>GitHub Actions</li></ul></dd></div>
+          <div><dt>Tests</dt><dd><ul class="tags" role="list"><li>Vitest</li><li>Playwright</li><li>ESLint</li></ul></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="steps-section steps-section--case" id="decisions" aria-labelledby="decisions-titre">
+  <div class="wrap">
+    <div class="steps-grid">
+      <div class="steps-side">
+        <h2 id="decisions-titre" class="h-section">Décisions</h2>
+      </div>
+      <ol class="steps" role="list">
+          <li class="step">
+            <h3 class="step-title">Des écrans faits pour des mains gantées</h3>
+            <div class="step-body"><p>Les écrans sont conçus pour 375 px de large. Les boutons d’action mesurent 56 px, parce qu’avec des gants ils doivent répondre du premier coup ; les filtres, qui servent à consulter, descendent à 48 px pour tenir sur une seule ligne. Un test de bout en bout mesure ces tailles à l’écran. Chaque rôle a son propre accueil et son guide.</p><p>Après chaque validation, un récapitulatif remplace le formulaire : le bouton retour ramène à l’accueil du module, jamais sur un formulaire déjà validé. Si l’opération a déjà été enregistrée, depuis ce téléphone ou un autre, l’écran le dit au lieu de l’enregistrer une seconde fois.</p></div>
+            <div class="step-media"><figure class="shot shot--phone" data-motion="time">
+          <div class="stage stage--phone" style="--tone:#2eb2a4;--on:#0c0c0d"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/cloture-phone.webp" srcset="../../assets/captures/erp-circulegg/cloture-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/cloture-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/arret-screen.webp ../../assets/captures/erp-circulegg/cloture-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
+          <figcaption>Fin de séchage : la cuve, l’heure d’arrêt et les quantités, puis un seul bouton.</figcaption>
+        </figure></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">Zéro arrêt enregistré, alors que les machines tombaient en panne</h3>
+            <div class="step-body"><p>En septembre, avant la mise en service, le registre des arrêts machine comptait zéro entrée sur neuf postes de production réels, alors que l’essai s’était déroulé pendant une panne. Le chiffre était propre, et il était faux. L’explication la plus probable était à l’écran : au séchage, le bouton se trouvait sous le bas de l’écran du téléphone ; au broyage et à l’ensachage, il restait grisé sans réseau.</p><p>J’ai levé ce blocage, puis mis en avant un gros bouton « La machine est arrêtée », à un seul toucher. Il était devenu trop visible : la première semaine à l’atelier, les opérateurs le lisaient comme un état et déclaraient des arrêts par erreur, plusieurs fois par jour. Il s’appelle maintenant « Déclarer un arrêt machine », et il est plus discret.</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">Une application qui continue sans réseau</h3>
+            <div class="step-body"><p>Hors réseau, l’opérateur continue de travailler : ses saisies attendent dans la file du téléphone et partent dès que le réseau revient. Chacune porte un identifiant unique, créé sur le téléphone. Si une réponse se perd et que la saisie repart, l’application retrouve dans la base la fiche déjà créée au lieu d’en créer une seconde ; si elle ne peut pas vérifier, elle n’écrit rien plutôt que de créer à l’aveugle.</p><p>La file respecte l’ordre des saisies, si bien qu’une erreur passagère, réseau ou serveur, la retient. Une saisie refusée pour de bon, par exemple une donnée invalide, est en revanche mise de côté : les suivantes continuent de partir, et l’erreur reste affichée jusqu’à ce qu’elle soit traitée.</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">Un bandeau qui dit la vérité sur la synchronisation</h3>
+            <div class="step-body"><p>En haut de chaque écran, un bandeau a quatre états : rouge quand des saisies sont en échec, orange hors ligne ou quand la connexion est instable, gris pendant l’envoi, vert quand tout est à jour. Le 6 août, pendant une panne de routage, il est resté vert alors que toutes les requêtes échouaient, parce qu’il tenait tout code 200 pour un succès, même quand la réponse était une page web. Depuis, seule une réponse lisible compte, ce qui écarte aussi les portails Wi-Fi, et le vert est daté, par exemple « À jour · 12:48 ».</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">Un stock calculé, jamais saisi</h3>
+            <div class="step-body"><p>Chaque transformation enregistre une sortie du lot transformé et une entrée dans le lot qui en naît. Le stock est la somme de ces mouvements ; en les remontant, on retrouve de quelles coquilles vient n’importe quel sac.</p><p>Airtable n’a pas de transaction. Une opération coupée à mi-chemin reste donc dans la file et se rejoue sans doublon jusqu’à être complète, et l’application refuse de l’abandonner, car un mouvement manquant fausserait le stock. Les changements d’état secondaires, comme le statut d’une cuve, peuvent échouer sans annuler la saisie principale ; ils sont rattrapés à la tentative suivante ou corrigés à la main.</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">La qualité garde le dernier mot sur chaque lot</h3>
+            <div class="step-body"><p>À la libération, l’application calcule un verdict à partir des cibles fixées par la qualité. Les mesures chiffrées (granulométrie, extrait sec, couleur) sont comparées à leurs bornes, les analyses microbiologiques sont conformes ou non, et une analyse non renseignée n’est jamais comptée comme conforme. La couleur sert déjà plus tôt : au broyage, ses écarts colorimétriques classent la poudre dans l’une des trois qualités.</p><p>Si la responsable qualité contredit le verdict, elle doit écrire pourquoi ; si elle libère un lot dont des analyses manquent, l’application le lui signale sans la bloquer. Un lot refusé garde la liste des familles de paramètres en cause, parce que cette cause ne pourrait plus être reconstituée après coup.</p></div>
+            <div class="step-media"><figure class="shot shot--phone" data-motion="time">
+          <div class="stage stage--phone" style="--tone:#2eb2a4;--on:#0c0c0d"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/liberation-phone.webp" srcset="../../assets/captures/erp-circulegg/liberation-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/liberation-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/liberation-fiche-screen.webp ../../assets/captures/erp-circulegg/liberation-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
+          <figcaption>La libération d’un lot : la fiche de contrôle, puis l’écran de décision.</figcaption>
+        </figure></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">Des tests qui rejouent l’atelier, hors ligne compris</h3>
+            <div class="step-body"><p>À chaque envoi de code, l’intégration continue enchaîne le lint, la vérification des types, les tests unitaires (Vitest) et les tests de bout en bout (Playwright), qui rejouent les parcours dans un navigateur. Une partie tourne sur le build de production, service worker actif et réseau coupé, car le mode développement n’installe pas de service worker et ne prouve rien sur le hors-ligne réel. Un test instable n’est jamais déclaré réparé parce qu’il est repassé au vert : la correction doit expliquer pourquoi l’échec est devenu impossible, et dire ce qu’elle ne couvre pas.</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">Des accès protégés et des sauvegardes déjà restaurées</h3>
+            <div class="step-body"><p>Le code PIN n’est vérifié que côté serveur, où il est haché avec un sel et une clé secrète (HMAC-SHA256) : le téléphone ne détient donc ni ce secret ni la clé de la base. Chaque nuit, les données, le schéma et les photos sont sauvegardés. La restauration a été testée deux fois, la seconde sur une base créée de zéro et suivie d’un parcours complet dans l’application ; un nouveau test est prévu chaque trimestre.</p></div>
+            
+          </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="resultats" aria-labelledby="resultats-titre">
+  <div class="wrap">
+    <h2 id="resultats-titre" class="h-section">Résultats</h2>
+    <dl class="figures figures--4"><div><dt>5 oct. 2026</dt><dd>mise en service à l’usine de Janzé</dd></div><div><dt>1 776</dt><dd>tests unitaires qui passent au 5 novembre 2026, et 142 fichiers de tests de bout en bout</dd></div><div><dt>189</dt><dd>décisions métier et techniques, écrites et datées</dd></div><div><dt>9</dt><dd>comptes ouverts à la mise en service : opérateurs, production, qualité, direction</dd></div></dl>
+    <p class="results-text">À partir d’août, chaque chantier est parti d’une note de cadrage, 43 au total. La première semaine d’utilisation à l’atelier a donné lieu à trois séries de correctifs, tirées de l’usage réel.</p>
+  </div>
+</section>
+
+<nav class="next" aria-label="Projets suivant et précédent">
+  <div class="wrap">
+    <a class="next-link" href="../../projets/nexus/">
+      <span class="next-text">
+        <span class="next-label">Projet suivant <span class="next-count">2 / 9</span></span>
+        <span class="next-name">Nexus.<span class="next-arrow"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></span>
+        <span class="next-outcome">Un assistant IA pour les équipes commerciales de PME : il repère ce qui menace le chiffre d’affaires, en donne le montant et prépare la correction</span>
+      </span>
+      <div class="next-shot" data-motion="time"><div class="stage stage--browser stage--slide" style="--tone:#2f5fd0;--on:#fafafa" aria-hidden="true"><div class="tablet"><div class="screen"><img src="../../assets/captures/nexus/accueil.webp" srcset="../../assets/captures/nexus/accueil.w480.webp 480w, ../../assets/captures/nexus/accueil.w1200.webp 1200w, ../../assets/captures/nexus/accueil.webp 2400w" sizes="(min-width: 900px) 44vw, 82vw" alt="" width="2400" height="1350" loading="lazy" decoding="async"><div class="live live--video" data-src="../../assets/captures/nexus/accueil-clip.mp4" style="--loop:14.3s"></div></div></div></div></div>
+    </a>
+    <div class="next-more">
+      <a class="ulink" href="../../projets/netflix-flutterflow/">Projet précédent : Clone Netflix</a>
+      <a class="ulink" href="../../#projets">Tous les projets</a>
+    </div>
+  </div>
+</nav>
+</article>
+</main>
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <p class="foot-kicker">Vous recrutez ?</p>
+    <a class="foot-big" href="mailto:greg.gargiulo.pro@gmail.com" data-reveal><span class="w"><span style="--i:0">M’écrire.<span class="foot-arrow"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 3.5l16.5 16.5M20 7v13H7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></span></span></a>
+    <p class="foot-text">Je cherche un CDI de développeur full stack, d’applications et d’agents IA, ou en automatisation. Mon alternance se termine en janvier 2027 : je suis disponible à partir de ce mois-là, à Paris ou en Île-⁠de-⁠France, sur site, en hybride ou à distance.</p>
+    <div class="foot-cols">
+      <ul role="list">
+        <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        
+      </ul>
+      <ul role="list">
+        <li><a href="../../#projets">Projets</a></li>
+        <li><a href="../../#methode">Méthode</a></li>
+        <li><a href="../../#parcours">Parcours</a></li>
+      </ul>
+      <ul role="list">
+        <li><a href="../../portfolio.json">Portfolio en JSON</a></li>
+        <li>Sans traceur ni cookie</li>
+      </ul>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Greg Gargiulo</span>
+      <span>Mis à jour le 5 novembre 2026</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

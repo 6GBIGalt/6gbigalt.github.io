@@ -1,0 +1,427 @@
+{
+  "version": "1.0",
+  "nom": "Greg Gargiulo",
+  "role": "AI product builder & développeur full stack",
+  "url": "https://6gbigalt.github.io",
+  "email": "greg.gargiulo.pro@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/g-gargiulo/",
+  "misAJour": "2026-11-05",
+  "parcours": [
+    {
+      "periode": "Janvier 2026 à janvier 2027",
+      "poste": "AI product builder & développeur full stack, en alternance",
+      "organisation": "Circul'Egg",
+      "detail": "Biotech qui valorise les coquilles d'œufs des casseries par un procédé breveté, lauréate du Grand Prix 2023 de l'Académie des technologies."
+    },
+    {
+      "periode": "Mai à octobre 2026",
+      "poste": "Cofondateur technique",
+      "organisation": "Nexus, side project",
+      "detail": "Assistant IA pour les PME, branché sur l'ensemble des outils de l'entreprise. Né d'un projet étudiant et mené à deux ; aucune société créée, jamais déployé, à l'arrêt."
+    },
+    {
+      "periode": "Depuis octobre 2025",
+      "poste": "Formation de concepteur développeur d'applications",
+      "organisation": "Alegria Academy",
+      "detail": "École no-code et IA labellisée Grande École du Numérique. La formation, suivie en alternance chez Circul'Egg, prépare au titre RNCP 37873, de niveau 6 (bac+3/4)."
+    },
+    {
+      "periode": "Octobre 2024 à septembre 2025",
+      "poste": "Sales Ops",
+      "organisation": "Super Capital, Paris",
+      "detail": "Groupe de financement de startups, en fonds propres et en dette, adossé à un club d'investisseurs privés. Mission en régie pour WeSale."
+    },
+    {
+      "periode": "Mai 2024 à septembre 2025",
+      "poste": "Consultant commercial",
+      "organisation": "WeSale, Boulogne-Billancourt",
+      "detail": "Cabinet spécialisé en performance commerciale et stratégie des ventes. Missions en régie chez ses clients, dont Super Capital et AccessAir."
+    },
+    {
+      "periode": "Mai 2024 à septembre 2025",
+      "poste": "Sales Ops",
+      "organisation": "AccessAir, Le Bourget",
+      "detail": "Affrètement de jets privés. Mission en régie pour WeSale."
+    },
+    {
+      "periode": "2010 à 2022",
+      "poste": "Rédacteur en chef adjoint",
+      "organisation": "ARTE, Program 33",
+      "detail": "Tracks, le magazine des contre-cultures d'ARTE, diffusé dans toute l'Europe pendant vingt-cinq ans."
+    },
+    {
+      "periode": "Octobre 2019 à avril 2020",
+      "poste": "Producteur exécutif",
+      "organisation": "VICE Media, Paris",
+      "detail": "Groupe international de médias et de production, fondé à Montréal en 1994. En parallèle de Tracks."
+    }
+  ],
+  "certifications": [
+    {
+      "date": "Juin 2026",
+      "intitule": "n8n, niveaux 1 et 2",
+      "organisme": "n8n"
+    },
+    {
+      "date": "Mars 2026",
+      "intitule": "Make Certified, niveau 4 Advanced",
+      "organisme": "Make"
+    }
+  ],
+  "projets": [
+    {
+      "slug": "erp-circulegg",
+      "nom": "ERP Circul'Egg",
+      "url": "https://6gbigalt.github.io/projets/erp-circulegg/",
+      "resultat": "L'atelier trace chaque lot sur téléphone, de la réception des coquilles à l'expédition",
+      "resume": "Circul'Egg, biotech lauréate du Grand Prix 2023 de l'Académie des technologies, transforme les coquilles d'œufs en ingrédients pour l'industrie. J'ai conçu et développé seul, avec des agents de code, son ERP de production, une application web qui s'installe sur les téléphones de l'atelier et continue de fonctionner sans réseau. Depuis le 5 octobre 2026, les opérateurs y saisissent chaque étape de la fabrication, et la qualité y valide chaque lot avant son départ.",
+      "role": "Conception et développement, seul développeur, avec des agents de code (Claude Code)",
+      "periode": "Mai à octobre 2026, puis évolutions",
+      "statut": "En production depuis le 5 octobre 2026",
+      "code": "Privé, dépôt de l'entreprise",
+      "stack": {
+        "Langages": [
+          "TypeScript"
+        ],
+        "Interface": [
+          "React",
+          "React Router",
+          "Tailwind CSS",
+          "PWA (vite-plugin-pwa)"
+        ],
+        "Serveur": [
+          "Fonctions serverless Vercel (Node.js)"
+        ],
+        "Bases de données": [
+          "Airtable",
+          "IndexedDB (Dexie)"
+        ],
+        "Documents générés": [
+          "jsPDF",
+          "write-excel-file"
+        ],
+        "Infrastructure": [
+          "Vite",
+          "Vercel",
+          "GitHub Actions"
+        ],
+        "Tests": [
+          "Vitest",
+          "Playwright",
+          "ESLint"
+        ]
+      }
+    },
+    {
+      "slug": "nexus",
+      "nom": "Nexus",
+      "url": "https://6gbigalt.github.io/projets/nexus/",
+      "resultat": "Un assistant IA pour les équipes commerciales de PME : il repère ce qui menace le chiffre d'affaires, en donne le montant et prépare la correction",
+      "resume": "Nexus est un side project mené à deux, né d'un projet étudiant et devenu un produit SaaS plus poussé : un assistant IA pour les équipes commerciales de PME. Branché sur l'ensemble des outils de l'entreprise, il signale de lui-même ce qui demande une action, monte des automatisations sur demande et répond sur les documents en citant le passage exact. Cofondateur technique, j'ai travaillé sur tout le produit, du serveur à l'interface, avec des agents de code : l'agent et ses garde-fous, la détection des alertes, les automatisations, l'audit du CRM et le socle (paiement, quotas, sécurité). Aucune société n'a été créée, et le projet est à l'arrêt depuis octobre 2026.",
+      "role": "Cofondateur technique, développement avec des agents de code",
+      "periode": "Mai à octobre 2026",
+      "statut": "Side project à l'arrêt : jamais déployé, aucune société créée",
+      "code": "Privé, démonstration en entretien",
+      "stack": {
+        "Langages": [
+          "Python",
+          "TypeScript"
+        ],
+        "Interface": [
+          "React",
+          "TanStack Start",
+          "TanStack Query",
+          "Tailwind CSS",
+          "Radix UI",
+          "ECharts"
+        ],
+        "Serveur": [
+          "FastAPI",
+          "LangGraph",
+          "LangChain"
+        ],
+        "Bases de données": [
+          "Supabase (PostgreSQL)",
+          "ChromaDB",
+          "Neo4j",
+          "Graphiti",
+          "DuckDB"
+        ],
+        "IA": [
+          "Mistral",
+          "Langfuse"
+        ],
+        "Connecteurs": [
+          "Pipedrive",
+          "Gmail",
+          "Google Agenda",
+          "Google Drive",
+          "Google Docs",
+          "Google Sheets",
+          "Notion",
+          "Slack",
+          "Airtable",
+          "Stripe",
+          "PostgreSQL",
+          "Supabase",
+          "CSV",
+          "API générique"
+        ],
+        "Infrastructure": [
+          "Docker",
+          "Sentry"
+        ],
+        "Tests": [
+          "pytest",
+          "Playwright",
+          "axe (RGAA)"
+        ],
+        "Qualité": [
+          "mypy (strict)",
+          "ruff",
+          "pip-audit"
+        ]
+      }
+    },
+    {
+      "slug": "onyx",
+      "nom": "Onyx",
+      "url": "https://6gbigalt.github.io/projets/onyx/",
+      "resultat": "Un agent IA personnel qui apprend des corrections qu'on lui fait, consolide sa mémoire chaque jour et agit dans Gmail, Google Agenda et Notion",
+      "resume": "J'ai conçu et développé Onyx seul, avec des agents de code. On lui parle ou on lui écrit ; ce qu'il apprend est rangé dans des notes Markdown que l'on peut ouvrir et corriger. Une fois par jour, il résume ses échanges et transforme les corrections qui se répètent en leçons durables ; une tâche mensuelle compare la note où il se décrit à son comportement récent. Son moteur d'automatisation a été repris dans Nexus.",
+      "role": "Conception et développement du moteur (agent, mémoire, voix) avec des agents de code ; interface prototypée avec Lovable, puis reprise",
+      "periode": "Mai à juillet 2026",
+      "statut": "Prototype fonctionnel, multi-utilisateur",
+      "code": "Privé",
+      "stack": {
+        "Langages": [
+          "Python",
+          "TypeScript"
+        ],
+        "Interface": [
+          "React",
+          "TanStack Start",
+          "Tailwind CSS",
+          "Radix UI",
+          "Three.js",
+          "react-force-graph"
+        ],
+        "Serveur": [
+          "FastAPI",
+          "WebSockets",
+          "APScheduler",
+          "MCP"
+        ],
+        "Bases de données": [
+          "ChromaDB",
+          "Neo4j",
+          "Graphiti",
+          "SQLite"
+        ],
+        "IA": [
+          "LiteLLM",
+          "Mistral",
+          "Gemini Live",
+          "Claude",
+          "sentence-transformers",
+          "spaCy",
+          "Langfuse"
+        ],
+        "Voix": [
+          "Voxtral",
+          "ElevenLabs",
+          "Edge TTS"
+        ],
+        "Sécurité": [
+          "Supabase Auth (JWT)",
+          "Fernet",
+          "OAuth 2.0"
+        ],
+        "Infrastructure": [
+          "Docker",
+          "Cloudflare Workers",
+          "GitHub Actions"
+        ],
+        "Tests": [
+          "pytest"
+        ]
+      }
+    },
+    {
+      "slug": "relances-commerciales",
+      "nom": "Sales Army",
+      "url": "https://6gbigalt.github.io/projets/relances-commerciales/",
+      "resultat": "Des relances commerciales préparées chaque matin, envoyées par le commercial",
+      "resume": "Pour l'équipe commerciale de Circul'Egg, j'ai construit sur n8n des workflows branchés sur Pipedrive, Outlook et Notion. Avant un rendez-vous, ils rédigent la fiche de préparation ; après, ils rangent le compte rendu dans le CRM et préparent chaque relance à son échéance, en brouillon dans la boîte Outlook du commercial, qui la relit et l'envoie.",
+      "role": "Conception et développement",
+      "periode": "Février à août 2026",
+      "statut": "En service",
+      "code": "Privé, workflows de l'entreprise",
+      "stack": {
+        "Automatisation": [
+          "n8n"
+        ],
+        "IA": [
+          "Claude Sonnet",
+          "Claude Haiku",
+          "Perplexity"
+        ],
+        "Connecteurs": [
+          "Pipedrive",
+          "Microsoft Graph (Outlook, OneDrive)",
+          "Microsoft Teams",
+          "Notion"
+        ]
+      }
+    },
+    {
+      "slug": "eggchange",
+      "nom": "Egg'Change",
+      "url": "https://6gbigalt.github.io/projets/eggchange/",
+      "resultat": "Un contact de salon enregistré en une photo et un mémo vocal",
+      "resume": "Une application mobile de prise de contacts, que j'ai conçue et développée seul pour l'équipe commerciale de Circul'Egg, d'abord pour le salon Vitafoods Europe 2026, puis pour d'autres salons. Le commercial photographie la carte de visite, résume l'échange à voix haute et qualifie le contact ; Gemini lit la carte et transcrit le mémo, puis la fiche part dans Airtable. Tout s'enregistre sans réseau, et la synchronisation ne crée jamais de doublon.",
+      "role": "Conception et développement",
+      "periode": "Février à juin 2026",
+      "statut": "En service sur les salons depuis Vitafoods Europe 2026",
+      "code": "Privé",
+      "stack": {
+        "Langages": [
+          "Dart",
+          "JavaScript"
+        ],
+        "Interface": [
+          "Flutter",
+          "Riverpod"
+        ],
+        "Serveur": [
+          "Firebase Cloud Functions (Node.js)"
+        ],
+        "Données et stockage": [
+          "Firestore",
+          "Hive",
+          "Firebase Storage",
+          "Airtable"
+        ],
+        "IA": [
+          "Gemini"
+        ],
+        "Authentification": [
+          "Firebase Auth"
+        ]
+      }
+    },
+    {
+      "slug": "normaliseur-video",
+      "nom": "Normaliseur vidéo",
+      "url": "https://6gbigalt.github.io/projets/normaliseur-video/",
+      "resultat": "Des vidéos de toutes origines prêtes à monter, sans réglage manuel",
+      "resume": "Un outil macOS que j'ai conçu et développé seul, pour mon propre usage : il prépare des vidéos de sources différentes avant leur montage dans CapCut. On glisse les fichiers sur l'application ; ils ressortent au même format, avec des couleurs et un volume homogènes, puis chacun est vérifié et le lancement laisse un rapport.",
+      "role": "Conception et développement",
+      "periode": "Octobre 2026",
+      "statut": "Terminé",
+      "code": "Privé",
+      "stack": {
+        "Langages": [
+          "Python",
+          "AppleScript"
+        ],
+        "Vidéo": [
+          "ffmpeg",
+          "ffprobe"
+        ],
+        "Tests": [
+          "unittest"
+        ]
+      }
+    },
+    {
+      "slug": "site-factory",
+      "nom": "Site Factory",
+      "url": "https://6gbigalt.github.io/projets/site-factory/",
+      "resultat": "Le site vitrine d'un commerce, produit par un agent de code à partir d'une fiche",
+      "resume": "Une méthode que j'ai conçue seul pour produire avec Claude Code les sites vitrines de commerces locaux. Le commerçant remplit une fiche ; l'agent avance ensuite en cinq phases, chacune avec son outil et validée avant la suivante, sous des règles écrites d'avance en performance, accessibilité, référencement local et sécurité. La méthode a servi à réaliser un site d'essai, pour une boulangerie artisanale de Romainville.",
+      "role": "Conception de la méthode et des règles",
+      "periode": "Février 2026",
+      "statut": "Méthode prête, éprouvée sur un site d'essai",
+      "code": "Privé",
+      "stack": {
+        "Langages": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "Agent de code": [
+          "Claude Code"
+        ],
+        "Référencement": [
+          "Schema.org (JSON-LD)",
+          "Open Graph"
+        ],
+        "Outils": [
+          "Firecrawl",
+          "ImageMagick",
+          "Lighthouse",
+          "Formspree"
+        ],
+        "Hébergement": [
+          "Netlify"
+        ]
+      }
+    },
+    {
+      "slug": "diagnostic-data-ia",
+      "nom": "Diagnostic Data & IA",
+      "url": "https://6gbigalt.github.io/projets/diagnostic-data-ia/",
+      "resultat": "Une feuille de route IA chiffrée et priorisée pour une PME industrielle fictive",
+      "resume": "Un exercice de la formation Alegria Academy, sur un cas fictif : un fabricant de menuiseries de 96 salariés, dont la marge recule, veut savoir ce que l'IA peut lui apporter. J'ai mené seul le diagnostic, jusqu'à une feuille de route chiffrée de 95 à 195 k€ sur 12 à 18 mois.",
+      "role": "Diagnostic complet, de l'analyse du dossier à la restitution",
+      "periode": "Juillet à août 2026",
+      "statut": "Restitution livrée",
+      "code": "Livrables de formation",
+      "stack": {
+        "Méthode": [
+          "Diag Data IA (Bpifrance)",
+          "Entretiens métier",
+          "Radar de maturité",
+          "Matrice impact et effort"
+        ],
+        "Outils": [
+          "Excel",
+          "PowerPoint",
+          "Loom"
+        ]
+      }
+    },
+    {
+      "slug": "netflix-flutterflow",
+      "nom": "Clone Netflix",
+      "url": "https://6gbigalt.github.io/projets/netflix-flutterflow/",
+      "resultat": "Une interface FlutterFlow sur une base qui vérifie les droits ligne par ligne",
+      "resume": "Un exercice de la formation Alegria Academy, que j'ai réalisé seul : reproduire le parcours de Netflix avec FlutterFlow pour l'interface, et Supabase pour la base, l'authentification et le stockage des affiches. La logique est écrite dans la base PostgreSQL : un schéma relationnel, des règles de sécurité au niveau des lignes et des triggers qui complètent les données d'eux-mêmes.",
+      "role": "Conception et développement",
+      "periode": "Octobre 2026",
+      "statut": "Rendu",
+      "code": "Projet pédagogique",
+      "stack": {
+        "Langages": [
+          "Dart",
+          "SQL"
+        ],
+        "Interface": [
+          "FlutterFlow"
+        ],
+        "Données et stockage": [
+          "Supabase (PostgreSQL)",
+          "Supabase Storage"
+        ],
+        "Authentification": [
+          "Supabase Auth"
+        ],
+        "Règles en base": [
+          "Row Level Security",
+          "Triggers PL/pgSQL"
+        ]
+      }
+    }
+  ]
+}

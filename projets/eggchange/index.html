@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Egg’Change, étude de cas | Greg Gargiulo</title>
+<meta name="description" content="Un contact de salon enregistré en une photo et un mémo vocal. Étude de cas : stack, décisions et résultats.">
+<link rel="canonical" href="https://6gbigalt.github.io/projets/eggchange/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Egg’Change, étude de cas | Greg Gargiulo">
+<meta property="og:description" content="Un contact de salon enregistré en une photo et un mémo vocal. Étude de cas : stack, décisions et résultats.">
+<meta property="og:url" content="https://6gbigalt.github.io/projets/eggchange/">
+<meta property="og:image" content="https://6gbigalt.github.io/assets/og/eggchange.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Egg’Change. Un contact de salon enregistré en une photo et un mémo vocal">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fafafa">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css?v=a170d63965">
+<link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
+<script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
+<script src="../../assets/js/site.js?v=5cea7b4c63" defer></script>
+<script type="speculationrules">{"prerender":[{"where":{"href_matches":"/projets/*"},"eagerness":"moderate"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://6gbigalt.github.io/#greg","name":"Greg Gargiulo","jobTitle":"AI product builder & développeur full stack","email":"mailto:greg.gargiulo.pro@gmail.com","url":"https://6gbigalt.github.io/","sameAs":["https://www.linkedin.com/in/g-gargiulo/"],"knowsAbout":["Applications métier","Agents IA","Automatisation","React","TypeScript","Python","FastAPI","n8n","Flutter"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://6gbigalt.github.io/"},{"@type":"ListItem","position":2,"name":"Egg'Change","item":"https://6gbigalt.github.io/projets/eggchange/"}]}]}</script>
+</head>
+<body class="page-case">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="hdr">
+  <a class="hdr-name" href="../../">Greg Gargiulo</a>
+  <nav class="hdr-nav" aria-label="Navigation principale">
+    <a href="../../#projets">Projets</a>
+    <a href="../../#methode">Méthode</a>
+    <a href="../../#parcours">Parcours</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV</a>
+  </nav>
+  <div class="hdr-right">
+    <a class="btn" href="mailto:greg.gargiulo.pro@gmail.com">M’écrire</a>
+    <button type="button" class="toggle" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <nav class="menu-nav" aria-label="Menu">
+    <ul role="list">
+      <li style="--i:0"><a href="../../#projets">Projets</a></li>
+      <li style="--i:1"><a href="../../#methode">Méthode</a></li>
+      <li style="--i:2"><a href="../../#parcours">Parcours</a></li>
+      <li style="--i:3"><a href="../../#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-foot">
+    <a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a>
+    <a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a>
+  </div>
+</div>
+<main id="contenu">
+<article class="case">
+<header class="case-intro">
+  <div class="wrap case-intro-inner">
+    <a class="btn back" href="../../"><span class="back-arrow" aria-hidden="true"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>Retour</a>
+    <div class="case-titlerow">
+      <h1 class="case-title">Egg’Change.</h1>
+      <p class="case-year"><span class="visually-hidden">Année : </span>2026</p>
+    </div>
+    <p class="case-outcome">Un contact de salon enregistré en une photo et un mémo vocal</p>
+  </div>
+</header>
+
+<section class="showcase showcase--case" aria-label="Les écrans du projet">
+  <div class="wrap">
+    <div class="reel" data-motion="time">
+      <div class="reel-frame" aria-hidden="true">
+        <div class="reel-slide" data-outcome="La liste des contacts du salon, la qualification d’un contact et la carte de visite numérique du commercial.">
+          <div class="stage stage--phones stage--reel" style="--tone:#1f7f72;--on:#fafafa" aria-hidden="true"><div class="phones"><div class="handset"><img class="phone" src="../../assets/captures/eggchange/prospects-phone.webp" srcset="../../assets/captures/eggchange/prospects-phone.w480.webp 480w, ../../assets/captures/eggchange/prospects-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--video" data-src="../../assets/captures/eggchange/prospects-clip.mp4" style="--loop:4s"></div></div></div><div class="handset"><img class="phone" src="../../assets/captures/eggchange/qualification-phone.webp" srcset="../../assets/captures/eggchange/qualification-phone.w480.webp 480w, ../../assets/captures/eggchange/qualification-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--video" data-src="../../assets/captures/eggchange/fiche-clip.mp4" style="--loop:9.6s"></div></div></div><img class="phone" src="../../assets/captures/eggchange/carte-phone.webp" srcset="../../assets/captures/eggchange/carte-phone.w480.webp 480w, ../../assets/captures/eggchange/carte-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="Le scanner : photo de la carte de visite, ou saisie manuelle.">
+          <div class="stage stage--phone stage--reel" style="--tone:#1f7f72;--on:#fafafa" aria-hidden="true"><img class="phone" src="../../assets/captures/eggchange/scanner-phone.webp" srcset="../../assets/captures/eggchange/scanner-phone.w480.webp 480w, ../../assets/captures/eggchange/scanner-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"></div>
+        </div>
+        <div class="reel-slide" data-outcome="La fiche d’un contact : sa qualification et les notes de l’échange.">
+          <div class="stage stage--phone stage--reel" style="--tone:#1f7f72;--on:#fafafa" aria-hidden="true"><div class="handset"><img class="phone" src="../../assets/captures/eggchange/qualification-phone.webp" srcset="../../assets/captures/eggchange/qualification-phone.w480.webp 480w, ../../assets/captures/eggchange/qualification-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--video" data-src="../../assets/captures/eggchange/fiche-clip.mp4" style="--loop:9.6s"></div></div></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="La carte du commercial et son QR code.">
+          <div class="stage stage--phone stage--reel" style="--tone:#1f7f72;--on:#fafafa" aria-hidden="true"><img class="phone" src="../../assets/captures/eggchange/carte-phone.webp" srcset="../../assets/captures/eggchange/carte-phone.w480.webp 480w, ../../assets/captures/eggchange/carte-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="lazy" decoding="async"></div>
+        </div>
+      </div>
+      <div class="reel-bar">
+        <p class="reel-caption">La liste des contacts du salon, la qualification d’un contact et la carte de visite numérique du commercial.</p>
+        <p class="reel-status visually-hidden" role="status"></p>
+        <div class="reel-ctrl">
+          <button type="button" class="arrow reel-pause" aria-label="Mettre les animations en pause"><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 3v10M10.5 3v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3.2l8 4.8-8 4.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+          <span class="reel-count" aria-hidden="true">1 / 4</span>
+          <div class="arrows reel-arrows">
+            <button type="button" class="arrow arrow--prev" data-dir="-1" aria-label="Écran précédent"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+            <button type="button" class="arrow" data-dir="1" aria-label="Écran suivant"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Sommaire de l’étude">
+  <div class="wrap">
+    <ul class="toc-list" role="list"><li><a href="#fiche">Fiche</a></li><li><a href="#livrables">Livrables</a></li><li><a href="#architecture">Architecture</a></li><li><a href="#stack">Stack technique</a></li><li><a href="#decisions">Décisions</a></li><li><a href="#resultats">Résultats</a></li></ul>
+  </div>
+</nav>
+
+<section class="overview" id="fiche" aria-label="Présentation du projet">
+  <div class="wrap overview-grid">
+    <div class="overview-side">
+      <h2 class="label">Fiche</h2>
+      <dl class="facts">
+          <div><dt>Rôle</dt><dd>Conception et développement</dd></div>
+          <div><dt>Équipe</dt><dd>Seul, pour l’équipe commerciale de Circul’Egg</dd></div>
+          <div><dt>Période</dt><dd>Février à juin 2026</dd></div>
+          <div><dt>Statut</dt><dd>En service sur les salons depuis Vitafoods Europe 2026</dd></div>
+          <div><dt>Code</dt><dd>Privé</dd></div>
+          <div><dt>Captures</dt><dd>Version de démonstration compilée depuis le code, avec des contacts et des cartes de visite fictifs.</dd></div>
+      </dl>
+    </div>
+    <div class="overview-main">
+      <h2 class="label">En bref</h2>
+      <p class="overview-lead">Une application mobile de prise de contacts, que j’ai conçue et développée seul pour l’équipe commerciale de Circul’Egg, d’abord pour le salon Vitafoods Europe 2026, puis pour d’autres salons. Le commercial photographie la carte de visite, résume l’échange à voix haute et qualifie le contact ; Gemini lit la carte et transcrit le mémo, puis la fiche part dans Airtable. Tout s’enregistre sans réseau, et la synchronisation ne crée jamais de doublon.</p>
+      <h2 class="label">Point de départ</h2>
+      <p class="overview-text">Sur un salon, un contact se résume souvent à une carte de visite et à quelques mots notés à la hâte. Le temps de rentrer, le contexte est perdu, et la fiche n’est saisie que des jours plus tard.</p>
+      <h3 class="label">Contraintes</h3>
+      <ul class="constraints" role="list"><li>Un réseau de salon saturé : tout doit s’enregistrer hors ligne.</li><li>Des contacts qui s’enchaînent sur le stand : chaque fiche doit se remplir en quelques gestes.</li><li>Une même application pour le web, iOS et Android, alors que l’accès à la caméra et au micro diffère d’une plateforme à l’autre.</li><li>La clé Airtable reste sur le serveur : l’application passe par une fonction.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="tech" aria-label="Livrables, architecture et stack technique">
+  <div class="wrap">
+    <div class="spec" id="livrables">
+      <h2 class="spec-title">Livrables</h2>
+      <ul class="spec-list" role="list"><li>L’application Flutter, utilisable sur le web et compilable pour iOS et Android.</li><li>La lecture des cartes de visite par Gemini 2.5 Flash.</li><li>Les mémos vocaux, transcrits et rattachés au contact.</li><li>La qualification commerciale et la file de synchronisation hors ligne.</li><li>Une fonction serveur qui envoie les fiches vers Airtable et garantit qu’aucune n’y est créée deux fois.</li><li>Les comptes des commerciaux et leur carte de visite numérique publique.</li></ul>
+    </div>
+    <div class="spec" id="architecture">
+      <h2 class="spec-title">Architecture</h2>
+      <div class="spec-text"><p>L’application enregistre chaque contact dans Hive, sur le téléphone, puis le synchronise vers Firestore et Firebase Storage. Gemini lit la carte et transcrit le mémo. Une Cloud Function en Node.js pousse les fiches vers Airtable : l’application n’appelle jamais Airtable directement.</p><p>L’enregistrement audio passe par une interface commune, avec une version pour le navigateur et une pour le mobile, choisie à la compilation. L’état de l’application est géré avec Riverpod.</p></div>
+    </div>
+    <div class="spec" id="stack">
+      <h2 class="spec-title">Stack technique</h2>
+      <dl class="stack-table">
+          <div><dt>Langages</dt><dd><ul class="tags" role="list"><li>Dart</li><li>JavaScript</li></ul></dd></div>
+          <div><dt>Interface</dt><dd><ul class="tags" role="list"><li>Flutter</li><li>Riverpod</li></ul></dd></div>
+          <div><dt>Serveur</dt><dd><ul class="tags" role="list"><li>Firebase Cloud Functions (Node.js)</li></ul></dd></div>
+          <div><dt>Données et stockage</dt><dd><ul class="tags" role="list"><li>Firestore</li><li>Hive</li><li>Firebase Storage</li><li>Airtable</li></ul></dd></div>
+          <div><dt>IA</dt><dd><ul class="tags" role="list"><li>Gemini</li></ul></dd></div>
+          <div><dt>Authentification</dt><dd><ul class="tags" role="list"><li>Firebase Auth</li></ul></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="steps-section steps-section--case" id="decisions" aria-labelledby="decisions-titre">
+  <div class="wrap">
+    <div class="steps-grid">
+      <div class="steps-side">
+        <h2 id="decisions-titre" class="h-section">Décisions</h2>
+      </div>
+      <ol class="steps" role="list">
+          <li class="step">
+            <h3 class="step-title">Gemini complète la fiche après coup</h3>
+            <div class="step-body"><p>Le commercial photographie la carte de visite et résume l’échange à voix haute. La fiche est enregistrée aussitôt, en attente ; dès que le réseau le permet, Gemini lit la carte et transcrit le mémo.</p></div>
+            <div class="step-media"><figure class="shot shot--phone" data-motion="time">
+          <div class="stage stage--phone" style="--tone:#1f7f72;--on:#fafafa"><img class="phone" src="../../assets/captures/eggchange/scanner-phone.webp" srcset="../../assets/captures/eggchange/scanner-phone.w480.webp 480w, ../../assets/captures/eggchange/scanner-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"></div>
+          <figcaption>Le scanner : photo de la carte de visite, ou saisie manuelle.</figcaption>
+        </figure></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">Une qualification qui suit le contact jusqu’à Airtable</h3>
+            <div class="step-body"><p>Provenance, température, profil et action souhaitée se choisissent d’un geste. Les mêmes valeurs servent de filtres dans la liste et de colonnes dans Airtable.</p></div>
+            <div class="step-media"><figure class="shot shot--phone" data-motion="time">
+          <div class="stage stage--phone" style="--tone:#1f7f72;--on:#fafafa"><div class="handset"><img class="phone" src="../../assets/captures/eggchange/qualification-phone.webp" srcset="../../assets/captures/eggchange/qualification-phone.w480.webp 480w, ../../assets/captures/eggchange/qualification-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--video" data-src="../../assets/captures/eggchange/fiche-clip.mp4" style="--loop:9.6s"></div></div></div></div>
+          <figcaption>La fiche d’un contact : sa qualification et les notes de l’échange.</figcaption>
+        </figure></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">La saisie n’attend jamais le réseau</h3>
+            <div class="step-body"><p>Chaque contact est d’abord enregistré sur le téléphone, sans attendre le serveur. Une file retente ensuite l’envoi toutes les dix secondes, et à chaque retour du réseau, jusqu’à ce que la fiche existe dans Airtable.</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">Une fiche n’est jamais créée deux fois</h3>
+            <div class="step-body"><p>Vérifier dans Airtable qu’une fiche n’existe pas avant de la créer ne suffit pas : deux envois proches font tous deux la vérification avant que le premier ait écrit, et une fiche fraîchement créée n’apparaît pas tout de suite dans les recherches. Avec les renvois de la file hors ligne, cela aurait produit des doublons.</p><p>Le serveur pose donc un verrou atomique dans Firestore : le premier envoi l’obtient et crée la fiche, les suivants attendent son identifiant et le réutilisent. Si une fiche a été supprimée à la main dans Airtable, le verrou la marque comme supprimée, et un envoi tardif ne la recrée jamais.</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">Une carte de visite numérique pour chaque commercial</h3>
+            <div class="step-body"><p>Le QR code de la carte ouvre une page publique, d’où le visiteur du stand enregistre les coordonnées du commercial dans son propre téléphone.</p></div>
+            <div class="step-media"><figure class="shot shot--phone" data-motion="time">
+          <div class="stage stage--phone" style="--tone:#1f7f72;--on:#fafafa"><img class="phone" src="../../assets/captures/eggchange/carte-phone.webp" srcset="../../assets/captures/eggchange/carte-phone.w480.webp 480w, ../../assets/captures/eggchange/carte-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"></div>
+          <figcaption>La carte du commercial et son QR code.</figcaption>
+        </figure></div>
+          </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="resultats" aria-labelledby="resultats-titre">
+  <div class="wrap">
+    <h2 id="resultats-titre" class="h-section">Résultats</h2>
+    <dl class="figures figures--3"><div><dt>14 030</dt><dd>lignes de Dart, réparties en 68 fichiers</dd></div><div><dt>4</dt><dd>champs de qualification envoyés en colonnes dans Airtable</dd></div><div><dt>10 s</dt><dd>entre deux tentatives d’envoi quand le réseau manque</dd></div></dl>
+    <p class="results-text">Sur les salons, à commencer par Vitafoods Europe 2026, l’équipe saisit et qualifie plus d’une centaine de contacts par jour. Leurs données arrivent dans Airtable au format attendu par le CRM, prêtes pour l’envoi des échantillons, des relances et des newsletters.</p>
+  </div>
+</section>
+
+<nav class="next" aria-label="Projets suivant et précédent">
+  <div class="wrap">
+    <a class="next-link" href="../../projets/normaliseur-video/">
+      <span class="next-text">
+        <span class="next-label">Projet suivant <span class="next-count">6 / 9</span></span>
+        <span class="next-name">Normaliseur vidéo.<span class="next-arrow"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></span>
+        <span class="next-outcome">Des vidéos de toutes origines prêtes à monter, sans réglage manuel</span>
+      </span>
+      <div class="next-shot" data-motion="time"><div class="stage stage--compare stage--slide" style="--tone:#5d6370;--on:#fafafa" aria-hidden="true"><div class="compare">
+          <div class="compare-side"><span class="compare-label">Avant</span><div class="compare-frame"><img src="../../assets/captures/normaliseur-video/avant-bandes.webp" srcset="../../assets/captures/normaliseur-video/avant-bandes.w480.webp 480w, ../../assets/captures/normaliseur-video/avant-bandes.webp 1280w" sizes="(min-width: 900px) 44vw, 82vw" alt="" width="1280" height="720" loading="lazy" decoding="async"></div></div>
+          <div class="compare-side"><span class="compare-label">Après</span><div class="compare-frame compare-frame--wipe"><img src="../../assets/captures/normaliseur-video/avant-bandes.webp" srcset="../../assets/captures/normaliseur-video/avant-bandes.w480.webp 480w, ../../assets/captures/normaliseur-video/avant-bandes.webp 1280w" sizes="(min-width: 900px) 44vw, 82vw" alt="" width="1280" height="720" loading="lazy" decoding="async"><img class="compare-after" src="../../assets/captures/normaliseur-video/apres-bandes.webp" srcset="../../assets/captures/normaliseur-video/apres-bandes.w480.webp 480w, ../../assets/captures/normaliseur-video/apres-bandes.w1200.webp 1200w, ../../assets/captures/normaliseur-video/apres-bandes.webp 1920w" sizes="(min-width: 900px) 44vw, 82vw" alt="" width="1920" height="1080" loading="lazy" decoding="async"></div></div>
+        </div></div></div>
+    </a>
+    <div class="next-more">
+      <a class="ulink" href="../../projets/relances-commerciales/">Projet précédent : Sales Army</a>
+      <a class="ulink" href="../../#projets">Tous les projets</a>
+    </div>
+  </div>
+</nav>
+</article>
+</main>
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <p class="foot-kicker">Vous recrutez ?</p>
+    <a class="foot-big" href="mailto:greg.gargiulo.pro@gmail.com" data-reveal><span class="w"><span style="--i:0">M’écrire.<span class="foot-arrow"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 3.5l16.5 16.5M20 7v13H7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></span></span></a>
+    <p class="foot-text">Je cherche un CDI de développeur full stack, d’applications et d’agents IA, ou en automatisation. Mon alternance se termine en janvier 2027 : je suis disponible à partir de ce mois-là, à Paris ou en Île-⁠de-⁠France, sur site, en hybride ou à distance.</p>
+    <div class="foot-cols">
+      <ul role="list">
+        <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        
+      </ul>
+      <ul role="list">
+        <li><a href="../../#projets">Projets</a></li>
+        <li><a href="../../#methode">Méthode</a></li>
+        <li><a href="../../#parcours">Parcours</a></li>
+      </ul>
+      <ul role="list">
+        <li><a href="../../portfolio.json">Portfolio en JSON</a></li>
+        <li>Sans traceur ni cookie</li>
+      </ul>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Greg Gargiulo</span>
+      <span>Mis à jour le 5 novembre 2026</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

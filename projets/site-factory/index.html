@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Factory, étude de cas | Greg Gargiulo</title>
+<meta name="description" content="Le site vitrine d’un commerce, produit par un agent de code à partir d’une fiche. Étude de cas : stack, décisions et résultats.">
+<link rel="canonical" href="https://6gbigalt.github.io/projets/site-factory/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Site Factory, étude de cas | Greg Gargiulo">
+<meta property="og:description" content="Le site vitrine d’un commerce, produit par un agent de code à partir d’une fiche. Étude de cas : stack, décisions et résultats.">
+<meta property="og:url" content="https://6gbigalt.github.io/projets/site-factory/">
+<meta property="og:image" content="https://6gbigalt.github.io/assets/og/site-factory.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Site Factory. Le site vitrine d’un commerce, produit par un agent de code à partir d’une fiche">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fafafa">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css?v=a170d63965">
+<link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
+<script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
+<script src="../../assets/js/site.js?v=5cea7b4c63" defer></script>
+<script type="speculationrules">{"prerender":[{"where":{"href_matches":"/projets/*"},"eagerness":"moderate"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://6gbigalt.github.io/#greg","name":"Greg Gargiulo","jobTitle":"AI product builder & développeur full stack","email":"mailto:greg.gargiulo.pro@gmail.com","url":"https://6gbigalt.github.io/","sameAs":["https://www.linkedin.com/in/g-gargiulo/"],"knowsAbout":["Applications métier","Agents IA","Automatisation","React","TypeScript","Python","FastAPI","n8n","Flutter"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://6gbigalt.github.io/"},{"@type":"ListItem","position":2,"name":"Site Factory","item":"https://6gbigalt.github.io/projets/site-factory/"}]}]}</script>
+</head>
+<body class="page-case">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="hdr">
+  <a class="hdr-name" href="../../">Greg Gargiulo</a>
+  <nav class="hdr-nav" aria-label="Navigation principale">
+    <a href="../../#projets">Projets</a>
+    <a href="../../#methode">Méthode</a>
+    <a href="../../#parcours">Parcours</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV</a>
+  </nav>
+  <div class="hdr-right">
+    <a class="btn" href="mailto:greg.gargiulo.pro@gmail.com">M’écrire</a>
+    <button type="button" class="toggle" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <nav class="menu-nav" aria-label="Menu">
+    <ul role="list">
+      <li style="--i:0"><a href="../../#projets">Projets</a></li>
+      <li style="--i:1"><a href="../../#methode">Méthode</a></li>
+      <li style="--i:2"><a href="../../#parcours">Parcours</a></li>
+      <li style="--i:3"><a href="../../#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-foot">
+    <a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a>
+    <a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a>
+    <a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a>
+  </div>
+</div>
+<main id="contenu">
+<article class="case">
+<header class="case-intro">
+  <div class="wrap case-intro-inner">
+    <a class="btn back" href="../../"><span class="back-arrow" aria-hidden="true"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>Retour</a>
+    <div class="case-titlerow">
+      <h1 class="case-title">Site Factory.</h1>
+      <p class="case-year"><span class="visually-hidden">Année : </span>2026</p>
+    </div>
+    <p class="case-outcome">Le site vitrine d’un commerce, produit par un agent de code à partir d’une fiche</p>
+  </div>
+</header>
+
+<section class="showcase showcase--case" aria-label="Les écrans du projet">
+  <div class="wrap">
+    <div class="reel" data-motion="time">
+      <div class="reel-frame" aria-hidden="true">
+        <div class="reel-slide" data-outcome="Le site d’essai : une boulangerie artisanale de Romainville.">
+          <div class="stage stage--browser stage--reel" style="--tone:#8a6a4a;--on:#fafafa" aria-hidden="true"><div class="tablet"><div class="screen"><img src="../../assets/captures/site-factory/accueil.webp" srcset="../../assets/captures/site-factory/accueil.w480.webp 480w, ../../assets/captures/site-factory/accueil.w1200.webp 1200w, ../../assets/captures/site-factory/accueil.webp 2160w" sizes="(min-width: 900px) 92vw, 100vw" alt="" width="2160" height="1215" loading="eager" decoding="async"><div class="live live--page" data-src="../../assets/captures/site-factory/accueil-page.webp" data-srcset="../../assets/captures/site-factory/accueil-page.w480.webp 480w, ../../assets/captures/site-factory/accueil-page.w1200.webp 1200w, ../../assets/captures/site-factory/accueil-page.webp 1800w" data-sizes="(min-width: 900px) 68vw, 88vw" style="--loop:22s"></div></div></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="Les produits, présentés comme en vitrine.">
+          <div class="stage stage--browser stage--reel" style="--tone:#8a6a4a;--on:#fafafa" aria-hidden="true"><div class="tablet"><div class="screen"><img src="../../assets/captures/site-factory/produits.webp" srcset="../../assets/captures/site-factory/produits.w480.webp 480w, ../../assets/captures/site-factory/produits.w1200.webp 1200w, ../../assets/captures/site-factory/produits.webp 2160w" sizes="(min-width: 900px) 92vw, 100vw" alt="" width="2160" height="1215" loading="eager" decoding="async"><div class="live live--page" data-src="../../assets/captures/site-factory/produits-page.webp" data-srcset="../../assets/captures/site-factory/produits-page.w480.webp 480w, ../../assets/captures/site-factory/produits-page.w1200.webp 1200w, ../../assets/captures/site-factory/produits-page.webp 1800w" data-sizes="(min-width: 900px) 68vw, 88vw" style="--loop:8s"></div></div></div></div>
+        </div>
+        <div class="reel-slide" data-outcome="Pensé d’abord pour le téléphone, là où les clients du quartier le consultent.">
+          <div class="stage stage--phone stage--reel" style="--tone:#8a6a4a;--on:#fafafa" aria-hidden="true"><div class="handset"><img class="phone" src="../../assets/captures/site-factory/mobile-phone.webp" srcset="../../assets/captures/site-factory/mobile-phone.w480.webp 480w, ../../assets/captures/site-factory/mobile-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--page" data-src="../../assets/captures/site-factory/mobile-page.webp" data-srcset="../../assets/captures/site-factory/mobile-page.webp 520w" data-sizes="(min-width: 900px) 20vw, 40vw" style="--loop:12s"></div></div></div></div>
+        </div>
+      </div>
+      <div class="reel-bar">
+        <p class="reel-caption">Le site d’essai : une boulangerie artisanale de Romainville.</p>
+        <p class="reel-status visually-hidden" role="status"></p>
+        <div class="reel-ctrl">
+          <button type="button" class="arrow reel-pause" aria-label="Mettre les animations en pause"><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 3v10M10.5 3v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3.2l8 4.8-8 4.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+          <span class="reel-count" aria-hidden="true">1 / 3</span>
+          <div class="arrows reel-arrows">
+            <button type="button" class="arrow arrow--prev" data-dir="-1" aria-label="Écran précédent"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+            <button type="button" class="arrow" data-dir="1" aria-label="Écran suivant"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Sommaire de l’étude">
+  <div class="wrap">
+    <ul class="toc-list" role="list"><li><a href="#fiche">Fiche</a></li><li><a href="#livrables">Livrables</a></li><li><a href="#architecture">Architecture</a></li><li><a href="#stack">Stack technique</a></li><li><a href="#decisions">Décisions</a></li><li><a href="#resultats">Résultats</a></li></ul>
+  </div>
+</nav>
+
+<section class="overview" id="fiche" aria-label="Présentation du projet">
+  <div class="wrap overview-grid">
+    <div class="overview-side">
+      <h2 class="label">Fiche</h2>
+      <dl class="facts">
+          <div><dt>Rôle</dt><dd>Conception de la méthode et des règles</dd></div>
+          <div><dt>Équipe</dt><dd>Seul, en projet personnel, pour éprouver la méthode</dd></div>
+          <div><dt>Période</dt><dd>Février 2026</dd></div>
+          <div><dt>Statut</dt><dd>Méthode prête, éprouvée sur un site d’essai</dd></div>
+          <div><dt>Code</dt><dd>Privé</dd></div>
+          <div><dt>Captures</dt><dd>Captures du site d’essai, affiché en local et jamais mis en ligne.</dd></div>
+      </dl>
+    </div>
+    <div class="overview-main">
+      <h2 class="label">En bref</h2>
+      <p class="overview-lead">Une méthode que j’ai conçue seul pour produire avec Claude Code les sites vitrines de commerces locaux. Le commerçant remplit une fiche ; l’agent avance ensuite en cinq phases, chacune avec son outil et validée avant la suivante, sous des règles écrites d’avance en performance, accessibilité, référencement local et sécurité. La méthode a servi à réaliser un site d’essai, pour une boulangerie artisanale de Romainville.</p>
+      <h2 class="label">Point de départ</h2>
+      <p class="overview-text">Un commerce local a besoin d’un site rapide, bien référencé dans son quartier, et qui ne ressemble pas à un modèle. Il n’a ni le temps ni le budget d’une agence, et un agent de code laissé libre produit vite des sites qui se ressemblent tous.</p>
+      <h3 class="label">Contraintes</h3>
+      <ul class="constraints" role="list"><li>Un commerçant sans compétence technique : une fiche à remplir, rien d’autre.</li><li>Aucun framework, aucune bibliothèque JavaScript, aucune étape de compilation.</li><li>Un rendu propre à chaque commerce, tiré de sa marque.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="tech" aria-label="Livrables, architecture et stack technique">
+  <div class="wrap">
+    <div class="spec" id="livrables">
+      <h2 class="spec-title">Livrables</h2>
+      <ul class="spec-list" role="list"><li>Le modèle maître : 631 lignes de règles pour l’agent, et la fiche à remplir par le commerçant.</li><li>Une « mémoire d’agence » : références de mise en page par type de commerce, erreurs visuelles à éviter, effets CSS prêts à l’emploi.</li><li>Les cinq phases, leurs outils et leurs critères de validation.</li><li>Les règles techniques : performance, accessibilité, données structurées, en-têtes de sécurité.</li><li>Une liste de contrôle avant livraison.</li><li>Un site d’essai réalisé, pour une boulangerie artisanale de Romainville, avec formulaire de contact et mentions légales.</li></ul>
+    </div>
+    <div class="spec" id="architecture">
+      <h2 class="spec-title">Architecture</h2>
+      <div class="spec-text"><p>Le site produit est en HTML, CSS et un peu de JavaScript, sans framework ni compilation : il s’ouvre tel quel et se déploie sur Netlify. Le CSS est réparti en huit fichiers par rôle (variables, base, mise en page, composants, animations, adaptation mobile…), le JavaScript en deux : le menu et le formulaire.</p><p>La configuration Netlify pose les en-têtes de sécurité (politique de sécurité du contenu, protection contre l’intégration dans un autre site) et un cache d’un an sur les fichiers statiques. Les données Schema.org décrivent le commerce pour la recherche locale, et le formulaire passe par Formspree.</p></div>
+    </div>
+    <div class="spec" id="stack">
+      <h2 class="spec-title">Stack technique</h2>
+      <dl class="stack-table">
+          <div><dt>Langages</dt><dd><ul class="tags" role="list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></dd></div>
+          <div><dt>Agent de code</dt><dd><ul class="tags" role="list"><li>Claude Code</li></ul></dd></div>
+          <div><dt>Référencement</dt><dd><ul class="tags" role="list"><li>Schema.org (JSON-LD)</li><li>Open Graph</li></ul></dd></div>
+          <div><dt>Outils</dt><dd><ul class="tags" role="list"><li>Firecrawl</li><li>ImageMagick</li><li>Lighthouse</li><li>Formspree</li></ul></dd></div>
+          <div><dt>Hébergement</dt><dd><ul class="tags" role="list"><li>Netlify</li></ul></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="steps-section steps-section--case" id="decisions" aria-labelledby="decisions-titre">
+  <div class="wrap">
+    <div class="steps-grid">
+      <div class="steps-side">
+        <h2 id="decisions-titre" class="h-section">Décisions</h2>
+      </div>
+      <ol class="steps" role="list">
+          <li class="step">
+            <h3 class="step-title">Des règles écrites avant la première ligne de code</h3>
+            <div class="step-body"><p>Le site doit se charger en moins de 2 secondes en 3G et peser moins de 1 Mo hors images ; les images se chargent à la demande, sauf celle du haut de page, et les scripts sont différés. En accessibilité, la cible est WCAG AA : lien d’évitement, focus visible, contrastes vérifiés, animations coupées pour qui les refuse.</p><p>Le référencement local repose sur un titre et une description calibrés, une fiche LocalBusiness en JSON-LD, des balises de partage et un plan du site.</p></div>
+            <div class="step-media"><div class="pair"><figure class="shot" data-motion="time">
+          <div class="stage stage--browser stage--pair" style="--tone:#8a6a4a;--on:#fafafa"><div class="tablet"><div class="screen"><img src="../../assets/captures/site-factory/produits.webp" srcset="../../assets/captures/site-factory/produits.w480.webp 480w, ../../assets/captures/site-factory/produits.w1200.webp 1200w, ../../assets/captures/site-factory/produits.webp 2160w" sizes="(min-width: 900px) 32vw, 92vw" alt="" width="2160" height="1215" loading="lazy" decoding="async"><div class="live live--page" data-src="../../assets/captures/site-factory/produits-page.webp" data-srcset="../../assets/captures/site-factory/produits-page.w480.webp 480w, ../../assets/captures/site-factory/produits-page.w1200.webp 1200w, ../../assets/captures/site-factory/produits-page.webp 1800w" data-sizes="(min-width: 900px) 68vw, 88vw" style="--loop:8s"></div></div></div></div>
+          <figcaption>Les produits, présentés comme en vitrine.</figcaption>
+        </figure><figure class="shot" data-motion="time">
+          <div class="stage stage--phone stage--pair" style="--tone:#8a6a4a;--on:#fafafa"><div class="handset"><img class="phone" src="../../assets/captures/site-factory/mobile-phone.webp" srcset="../../assets/captures/site-factory/mobile-phone.w480.webp 480w, ../../assets/captures/site-factory/mobile-phone.webp 960w" sizes="(min-width: 900px) 14vw, 40vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--page" data-src="../../assets/captures/site-factory/mobile-page.webp" data-srcset="../../assets/captures/site-factory/mobile-page.webp 520w" data-sizes="(min-width: 900px) 20vw, 40vw" style="--loop:12s"></div></div></div></div>
+          <figcaption>Pensé d’abord pour le téléphone, là où les clients du quartier le consultent.</figcaption>
+        </figure></div></div>
+          </li>
+          <li class="step">
+            <h3 class="step-title">Cinq phases, validées une par une</h3>
+            <div class="step-body"><p>La première phase rassemble, avec Firecrawl, des informations sur le commerce, ses avis et son quartier. La deuxième pose le système de design et le haut de page, jugés décisifs pour la qualité perçue. La troisième génère le reste du site, la quatrième convertit les images en WebP et les redimensionne avec ImageMagick, la cinquième audite le site avec Lighthouse et relit le code.</p><p>L’agent ne passe à la phase suivante qu’après validation, et ne génère jamais le site d’un seul coup. L’audit vise plus de 90 en performance et en bonnes pratiques, plus de 95 en accessibilité et en référencement.</p></div>
+            
+          </li>
+          <li class="step">
+            <h3 class="step-title">Une mémoire d’agence contre l’effet modèle</h3>
+            <div class="step-body"><p>Avant de dessiner, l’agent lit des références de mise en page propres au type de commerce et une liste d’erreurs visuelles à éviter. Le système de design part de la marque du commerce : couleurs, typographies, espacements sur une base de 8 px, ombres et rayons définis une fois et réutilisés partout.</p></div>
+            
+          </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="resultats" aria-labelledby="resultats-titre">
+  <div class="wrap">
+    <h2 id="resultats-titre" class="h-section">Résultats</h2>
+    <dl class="figures figures--4"><div><dt>5</dt><dd>phases, chacune avec son outil et ses critères de validation</dd></div><div><dt>2 s</dt><dd>de chargement au maximum en 3G, exigé par les règles</dd></div><div><dt>1</dt><dd>site d’essai produit, pour une boulangerie artisanale de Romainville</dd></div><div><dt>631</dt><dd>lignes de règles dans le modèle maître</dd></div></dl>
+    <p class="results-text">Méthode prête. Le site d’essai n’a pas été mis en ligne.</p>
+  </div>
+</section>
+
+<nav class="next" aria-label="Projets suivant et précédent">
+  <div class="wrap">
+    <a class="next-link" href="../../projets/diagnostic-data-ia/">
+      <span class="next-text">
+        <span class="next-label">Projet suivant <span class="next-count">8 / 9</span></span>
+        <span class="next-name">Diagnostic Data &amp; IA.<span class="next-arrow"><svg viewBox="0 0 38 18" aria-hidden="true" focusable="false"><path d="M0.75 9h35.5M28.5 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></span>
+        <span class="next-outcome">Une feuille de route IA chiffrée et priorisée pour une PME industrielle fictive</span>
+      </span>
+      <div class="next-shot" data-motion="time"><div class="stage stage--doc stage--slide" style="--tone:#1f3b6e;--on:#fafafa" aria-hidden="true"><div class="paper paper--seq"><img src="../../assets/captures/diagnostic-data-ia/radar.webp" srcset="../../assets/captures/diagnostic-data-ia/radar.w480.webp 480w, ../../assets/captures/diagnostic-data-ia/radar.w1200.webp 1200w, ../../assets/captures/diagnostic-data-ia/radar.webp 2000w" sizes="(min-width: 900px) 44vw, 82vw" alt="" width="2000" height="1125" loading="lazy" decoding="async"><div class="live live--seq" data-seq="../../assets/captures/diagnostic-data-ia/page-7.webp ../../assets/captures/diagnostic-data-ia/page-8.webp ../../assets/captures/diagnostic-data-ia/page-9.webp ../../assets/captures/diagnostic-data-ia/page-10.webp ../../assets/captures/diagnostic-data-ia/page-11.webp ../../assets/captures/diagnostic-data-ia/page-16.webp ../../assets/captures/diagnostic-data-ia/page-20.webp" data-span="6" style="--loop:16.8s"></div></div></div></div>
+    </a>
+    <div class="next-more">
+      <a class="ulink" href="../../projets/normaliseur-video/">Projet précédent : Normaliseur vidéo</a>
+      <a class="ulink" href="../../#projets">Tous les projets</a>
+    </div>
+  </div>
+</nav>
+</article>
+</main>
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <p class="foot-kicker">Vous recrutez ?</p>
+    <a class="foot-big" href="mailto:greg.gargiulo.pro@gmail.com" data-reveal><span class="w"><span style="--i:0">M’écrire.<span class="foot-arrow"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 3.5l16.5 16.5M20 7v13H7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></span></span></a>
+    <p class="foot-text">Je cherche un CDI de développeur full stack, d’applications et d’agents IA, ou en automatisation. Mon alternance se termine en janvier 2027 : je suis disponible à partir de ce mois-là, à Paris ou en Île-⁠de-⁠France, sur site, en hybride ou à distance.</p>
+    <div class="foot-cols">
+      <ul role="list">
+        <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        
+      </ul>
+      <ul role="list">
+        <li><a href="../../#projets">Projets</a></li>
+        <li><a href="../../#methode">Méthode</a></li>
+        <li><a href="../../#parcours">Parcours</a></li>
+      </ul>
+      <ul role="list">
+        <li><a href="../../portfolio.json">Portfolio en JSON</a></li>
+        <li>Sans traceur ni cookie</li>
+      </ul>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Greg Gargiulo</span>
+      <span>Mis à jour le 5 novembre 2026</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
