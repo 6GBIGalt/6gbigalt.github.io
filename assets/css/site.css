@@ -929,12 +929,6 @@ button {
   font-size: 0.9375rem;
   opacity: 0.7;
 }
-.index-body {
-  display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: clamp(2rem, 4vw, 4rem);
-  align-items: start;
-}
 .index-list {
   margin: 0;
   padding: 0;
@@ -943,8 +937,9 @@ button {
 }
 .irow {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.4rem 1.5rem;
+  grid-template-columns: clamp(10rem, 15vw, 14rem) minmax(0, 1fr) auto;
+  gap: 0.4rem clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
   padding: clamp(1.25rem, 2vw, 1.6rem) 0;
   border-top: 1px solid var(--line);
   text-decoration: none;
@@ -958,8 +953,7 @@ button {
   line-height: 1.05;
   letter-spacing: -0.035em;
 }
-/* Chaque ligne porte sa flèche, pour se lire comme un lien ; sur ordinateur, elle s'atténue avec
-   le nom tant que la ligne n'est pas active, puis avance d'un cran. */
+/* Chaque ligne porte sa flèche, pour se lire comme un lien. */
 .irow-arrow {
   display: block;
   width: 0.8em;
@@ -977,70 +971,40 @@ button {
   white-space: nowrap;
 }
 .irow-outcome {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
   max-width: 52ch;
   font-size: var(--fs-small);
   line-height: 1.45;
   opacity: 0.75;
 }
 .irow-stack {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
   margin-top: 0.35rem;
 }
-/* Vignette de la ligne : seulement sur mobile, où l'aperçu à droite n'existe pas. */
+/* La vignette occupe la hauteur de la ligne, à gauche du texte. */
 .irow-thumb {
-  display: none;
+  grid-row: span 3;
 }
-/* Sur ordinateur, où l'aperçu suit la ligne active : chaque ligne occupe environ un quart d'écran,
-   le temps de regarder l'aperçu, et le nom des autres lignes s'atténue (contraste conservé). */
+/* Sur ordinateur, le survol fait avancer la flèche et rapproche légèrement la capture.
+   La hauteur restante va sous les étiquettes, pour un même écart sur toutes les lignes. */
 @media (min-width: 901px) {
   .irow {
-    padding-block: clamp(2.5rem, 7svh, 4.5rem);
-  }
-  .irow-name {
-    transition: opacity 0.35s var(--ease);
-  }
-  .js .irow:not(.is-active) .irow-name {
-    opacity: 0.55;
+    grid-template-rows: auto auto 1fr;
   }
   .irow-arrow {
     transition: transform 0.4s var(--ease-out);
   }
-  .irow.is-active .irow-arrow {
+  .irow:hover .irow-arrow,
+  .irow:focus-visible .irow-arrow {
     transform: translateX(0.25em);
   }
-}
-/* L'aperçu ouvre l'étude du projet affiché (voir site.js) ; au clavier, les lignes de la liste. */
-.js .index-preview {
-  cursor: pointer;
-}
-.index-preview {
-  position: sticky;
-  top: calc(var(--hdr) + 2rem);
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background: color-mix(in srgb, currentColor 6%, transparent);
-}
-.index-shot {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.45s var(--ease);
-}
-.index-shot.is-on {
-  opacity: 1;
-}
-.index-shot .stage {
-  position: absolute;
-  inset: 0;
-  aspect-ratio: auto;
-}
-.index-shot .stage > * {
-  transition: scale 0.8s var(--ease-out);
-  scale: 1.03;
-}
-.index-shot.is-on .stage > * {
-  scale: 1;
+  .irow-thumb .stage > * {
+    transition: scale 0.8s var(--ease-out);
+  }
+  .irow:hover .irow-thumb .stage > *,
+  .irow:focus-visible .irow-thumb .stage > * {
+    scale: 1.04;
+  }
 }
 
 /* ------------------------------------------------------------------ Lignes numérotées (méthode, décisions) */
@@ -1773,7 +1737,6 @@ button {
 .stage--slide {
   aspect-ratio: 5 / 4;
 }
-.stage--thumb,
 .stage--mini {
   aspect-ratio: 4 / 3;
 }
@@ -2368,12 +2331,6 @@ html:has(.viewer[open]) {
   .about-facts {
     grid-template-columns: minmax(0, 1fr);
   }
-  .index-body {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .index-preview {
-    display: none;
-  }
   .spec {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -2407,18 +2364,17 @@ html:has(.viewer[open]) {
     overflow: visible;
     scroll-snap-type: none;
   }
-  /* Sans aperçu à droite, chaque ligne a sa vignette à gauche et sa flèche au bout du nom. */
+  /* Sur téléphone, la vignette reste à gauche et la flèche va au bout du nom. */
   .irow {
     grid-template-columns: 7.5rem minmax(0, 1fr);
     column-gap: 1rem;
     align-items: start;
   }
-  .irow-thumb {
-    display: block;
-    grid-row: span 3;
-  }
   .irow-name {
     justify-content: space-between;
+  }
+  .irow-stack {
+    grid-column: 1 / -1;
   }
   .irow-arrow {
     flex: none;
@@ -2607,7 +2563,6 @@ html:has(.viewer[open]) {
   .toc,
   .back,
   .works-ctrl,
-  .index-preview,
   .irow-arrow,
   .irow-thumb,
   .live,
