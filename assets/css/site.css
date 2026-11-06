@@ -1341,6 +1341,20 @@ button {
 .foot-cols a:hover {
   text-decoration: underline;
 }
+.foot-copy {
+  margin-left: 0.75rem;
+  padding: 0.3rem 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+.no-js .foot-copy {
+  display: none;
+}
 .foot-legal {
   display: flex;
   flex-wrap: wrap;
@@ -2129,6 +2143,39 @@ html:has(.viewer[open]) {
   line-height: 1.45;
   text-align: center;
   opacity: 0.75;
+}
+/* Téléphone debout : la tablette prend toute la largeur, sinon l'agrandissement ne gagne presque rien. */
+@media (max-width: 600px) {
+  .viewer {
+    padding-inline: 0.5rem;
+  }
+  .viewer .tablet {
+    width: min(97cqw, 138cqh);
+  }
+}
+/* Téléphone couché : la hauteur manque. La légende cède sa place, les boutons se rangent à droite. */
+@media (max-height: 500px) {
+  .viewer {
+    padding: 0.75rem var(--pad);
+  }
+  .viewer-caption {
+    display: none;
+  }
+  .viewer-body {
+    padding-right: 5.5rem;
+  }
+  .viewer-stage {
+    width: min(100%, calc((100dvh - 1.5rem) * 16 / 9));
+    aspect-ratio: 16 / 9;
+  }
+  .viewer .tablet {
+    width: min(97cqw, 170cqh);
+  }
+  dialog.viewer .reel-pause {
+    top: 4rem;
+    right: var(--pad);
+    left: auto;
+  }
 }
 /* Pause des animations, aussi dans la visionneuse : le dialog rend les boutons de la page inatteignables. */
 .viewer .reel-pause {

@@ -22,10 +22,10 @@
 <link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=a170d63965">
+<link rel="stylesheet" href="../../assets/css/site.css?v=7140851d5a">
 <link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
 <script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
-<script src="../../assets/js/site.js?v=5cea7b4c63" defer></script>
+<script src="../../assets/js/site.js?v=150ceecd4c" defer></script>
 <script type="speculationrules">{"prerender":[{"where":{"href_matches":"/projets/*"},"eagerness":"moderate"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://6gbigalt.github.io/#greg","name":"Greg Gargiulo","jobTitle":"AI product builder & développeur full stack","email":"mailto:greg.gargiulo.pro@gmail.com","url":"https://6gbigalt.github.io/","sameAs":["https://www.linkedin.com/in/g-gargiulo/"],"knowsAbout":["Applications métier","Agents IA","Automatisation","React","TypeScript","Python","FastAPI","n8n","Flutter"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://6gbigalt.github.io/"},{"@type":"ListItem","position":2,"name":"ERP Circul'Egg","item":"https://6gbigalt.github.io/projets/erp-circulegg/"}]}]}</script>
 </head>
@@ -82,7 +82,7 @@
         <div class="reel-slide" data-outcome="Fin de séchage : la cuve, l’heure d’arrêt et les quantités, puis un seul bouton.">
           <div class="stage stage--phone stage--reel" style="--tone:#2eb2a4;--on:#0c0c0d" aria-hidden="true"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/cloture-phone.webp" srcset="../../assets/captures/erp-circulegg/cloture-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/cloture-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="eager" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/arret-screen.webp ../../assets/captures/erp-circulegg/cloture-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
         </div>
-        <div class="reel-slide" data-outcome="La libération d’un lot : la fiche de contrôle, puis l’écran de décision.">
+        <div class="reel-slide" data-outcome="La validation d’un lot : la fiche de contrôle, puis l’écran de décision.">
           <div class="stage stage--phone stage--reel" style="--tone:#2eb2a4;--on:#0c0c0d" aria-hidden="true"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/liberation-phone.webp" srcset="../../assets/captures/erp-circulegg/liberation-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/liberation-phone.webp 960w" sizes="(min-width: 900px) 20vw, 34vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/liberation-fiche-screen.webp ../../assets/captures/erp-circulegg/liberation-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
         </div>
       </div>
@@ -114,7 +114,7 @@
       <h2 class="label">Fiche</h2>
       <dl class="facts">
           <div><dt>Rôle</dt><dd>Conception et développement, seul développeur, avec des agents de code (Claude Code)</dd></div>
-          <div><dt>Équipe</dt><dd>Le dirigeant pour les arbitrages, les responsables qualité et production pour la recette</dd></div>
+          <div><dt>Équipe</dt><dd>Le dirigeant pour les arbitrages, les responsables qualité et production pour les essais avant la mise en service</dd></div>
           <div><dt>Période</dt><dd>Mai à octobre 2026, puis évolutions</dd></div>
           <div><dt>Statut</dt><dd>En production depuis le 5 octobre 2026</dd></div>
           <div><dt>Code</dt><dd>Privé, dépôt de l’entreprise</dd></div>
@@ -136,7 +136,7 @@
   <div class="wrap">
     <div class="spec" id="livrables">
       <h2 class="spec-title">Livrables</h2>
-      <ul class="spec-list" role="list"><li>Les parcours de chaque poste : réception, séchage, broyage, libération qualité, ensachage, expédition, arrêts machine.</li><li>Quatre espaces selon le rôle : opérateur, production, qualité et direction ; des tableaux de bord et des exports mensuels pour les trois derniers.</li><li>Une base Airtable de 31 tables, documentée table par table.</li><li>Une file de synchronisation hors ligne, et trois fonctions serverless qui gardent la clé d’accès à la base.</li><li>Le calcul du verdict qualité et le classement couleur des poudres.</li><li>Une sauvegarde nocturne des données, du schéma et des photos, avec une procédure de restauration testée.</li><li>Des tests unitaires et de bout en bout, lancés à chaque envoi de code.</li><li>Quatre guides utilisateurs en PDF et des feuilles de poste imprimables.</li></ul>
+      <ul class="spec-list" role="list"><li>Les parcours de chaque poste : réception, séchage, broyage, validation qualité, ensachage, expédition, arrêts machine.</li><li>Quatre espaces selon le rôle : opérateur, production, qualité et direction ; des tableaux de bord et des exports mensuels pour les trois derniers.</li><li>Une base Airtable de 31 tables, documentée table par table.</li><li>Une file de synchronisation hors ligne, et trois fonctions serverless qui gardent la clé d’accès à la base.</li><li>Le calcul du verdict qualité et le classement couleur des poudres.</li><li>Une sauvegarde nocturne des données, du schéma et des photos, avec une procédure de restauration testée.</li><li>Des tests unitaires et de bout en bout, lancés à chaque envoi de code.</li><li>Quatre guides utilisateurs en PDF et des feuilles de poste imprimables.</li></ul>
     </div>
     <div class="spec" id="architecture">
       <h2 class="spec-title">Architecture</h2>
@@ -194,10 +194,10 @@
           </li>
           <li class="step">
             <h3 class="step-title">La qualité garde le dernier mot sur chaque lot</h3>
-            <div class="step-body"><p>À la libération, l’application calcule un verdict à partir des cibles fixées par la qualité. Les mesures chiffrées (granulométrie, extrait sec, couleur) sont comparées à leurs bornes, les analyses microbiologiques sont conformes ou non, et une analyse non renseignée n’est jamais comptée comme conforme. La couleur sert déjà plus tôt : au broyage, ses écarts colorimétriques classent la poudre dans l’une des trois qualités.</p><p>Si la responsable qualité contredit le verdict, elle doit écrire pourquoi ; si elle libère un lot dont des analyses manquent, l’application le lui signale sans la bloquer. Un lot refusé garde la liste des familles de paramètres en cause, parce que cette cause ne pourrait plus être reconstituée après coup.</p></div>
+            <div class="step-body"><p>Au moment de valider un lot, l’application calcule un verdict à partir des cibles fixées par la qualité. Les mesures chiffrées (granulométrie, extrait sec, couleur) sont comparées à leurs bornes, les analyses microbiologiques sont conformes ou non, et une analyse non renseignée n’est jamais comptée comme conforme. La couleur sert déjà plus tôt : au broyage, ses écarts colorimétriques classent la poudre dans l’une des trois qualités.</p><p>Si la responsable qualité contredit le verdict, elle doit écrire pourquoi ; si elle valide un lot dont des analyses manquent, l’application le lui signale sans la bloquer. Un lot refusé garde la liste des familles de paramètres en cause, parce que cette cause ne pourrait plus être reconstituée après coup.</p></div>
             <div class="step-media"><figure class="shot shot--phone" data-motion="time">
           <div class="stage stage--phone" style="--tone:#2eb2a4;--on:#0c0c0d"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/liberation-phone.webp" srcset="../../assets/captures/erp-circulegg/liberation-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/liberation-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/liberation-fiche-screen.webp ../../assets/captures/erp-circulegg/liberation-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
-          <figcaption>La libération d’un lot : la fiche de contrôle, puis l’écran de décision.</figcaption>
+          <figcaption>La validation d’un lot : la fiche de contrôle, puis l’écran de décision.</figcaption>
         </figure></div>
           </li>
           <li class="step">
@@ -219,7 +219,7 @@
   <div class="wrap">
     <h2 id="resultats-titre" class="h-section">Résultats</h2>
     <dl class="figures figures--4"><div><dt>5 oct. 2026</dt><dd>mise en service à l’usine de Janzé</dd></div><div><dt>1 776</dt><dd>tests unitaires qui passent au 5 novembre 2026, et 142 fichiers de tests de bout en bout</dd></div><div><dt>189</dt><dd>décisions métier et techniques, écrites et datées</dd></div><div><dt>9</dt><dd>comptes ouverts à la mise en service : opérateurs, production, qualité, direction</dd></div></dl>
-    <p class="results-text">À partir d’août, chaque chantier est parti d’une note de cadrage, 43 au total. La première semaine d’utilisation à l’atelier a donné lieu à trois séries de correctifs, tirées de l’usage réel.</p>
+    <p class="results-text">Les opérateurs saisissent chaque étape sur leur téléphone, et l’origine d’un sac se retrouve en remontant ses mouvements, sans recouper de fiches à la main. La première semaine d’utilisation à l’atelier a donné lieu à trois séries de correctifs, tirées de l’usage réel.</p>
   </div>
 </section>
 
@@ -248,7 +248,7 @@
     <p class="foot-text">Je cherche un CDI de développeur full stack, d’applications et d’agents IA, ou en automatisation. Mon alternance se termine en janvier 2027 : je suis disponible à partir de ce mois-là, à Paris ou en Île-⁠de-⁠France, sur site, en hybride ou à distance.</p>
     <div class="foot-cols">
       <ul role="list">
-        <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a></li>
+        <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a> <button type="button" class="foot-copy" data-copy="greg.gargiulo.pro@gmail.com" aria-live="polite">Copier l’adresse</button></li>
         <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
         <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
         
@@ -265,7 +265,7 @@
     </div>
     <div class="foot-legal">
       <span>© 2026 Greg Gargiulo</span>
-      <span>Mis à jour le 5 novembre 2026</span>
+      <span>Mis à jour le 6 novembre 2026</span>
     </div>
   </div>
 </footer>

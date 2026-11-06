@@ -8,6 +8,21 @@
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const hasIO = "IntersectionObserver" in window;
 
+  // ------------------------------------------------------------ contact
+  // « M'écrire » suppose un logiciel de messagerie : l'adresse se copie aussi d'un clic.
+  document.querySelectorAll("[data-copy]").forEach((button) => {
+    const label = button.textContent;
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy);
+        button.textContent = "Adresse copiée";
+      } catch {
+        button.textContent = "Copie impossible";
+      }
+      setTimeout(() => (button.textContent = label), 2000);
+    });
+  });
+
   // ------------------------------------------------------------ en-tête
   // Un filet apparaît sous l'en-tête dès que la page n'est plus tout en haut.
   if (hasIO) {
