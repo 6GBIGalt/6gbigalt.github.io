@@ -22,7 +22,7 @@
 <link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=7140851d5a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=f4d169cef3">
 <link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
 <script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
 <script src="../../assets/js/site.js?v=150ceecd4c" defer></script>
@@ -165,7 +165,7 @@
       </div>
       <ol class="steps" role="list">
           <li class="step">
-            <h3 class="step-title">Des écrans faits pour des mains gantées</h3>
+            <h3 class="step-title">Les écrans sont faits pour des mains gantées</h3>
             <div class="step-body"><p>Les écrans sont conçus pour 375 px de large. Les boutons d’action mesurent 56 px, parce qu’avec des gants ils doivent répondre du premier coup ; les filtres, qui servent à consulter, descendent à 48 px pour tenir sur une seule ligne. Un test de bout en bout mesure ces tailles à l’écran. Chaque rôle a son propre accueil et son guide.</p><p>Après chaque validation, un récapitulatif remplace le formulaire : le bouton retour ramène à l’accueil du module, jamais sur un formulaire déjà validé. Si l’opération a déjà été enregistrée, depuis ce téléphone ou un autre, l’écran le dit au lieu de l’enregistrer une seconde fois.</p></div>
             <div class="step-media"><figure class="shot shot--phone" data-motion="time">
           <div class="stage stage--phone" style="--tone:#2eb2a4;--on:#0c0c0d"><div class="handset"><img class="phone" src="../../assets/captures/erp-circulegg/cloture-phone.webp" srcset="../../assets/captures/erp-circulegg/cloture-phone.w480.webp 480w, ../../assets/captures/erp-circulegg/cloture-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--seq" data-seq="../../assets/captures/erp-circulegg/arret-screen.webp ../../assets/captures/erp-circulegg/cloture-screen.webp" data-span="1" style="--loop:4.8s"></div></div></div></div>
@@ -178,17 +178,17 @@
             
           </li>
           <li class="step">
-            <h3 class="step-title">Une application qui continue sans réseau</h3>
+            <h3 class="step-title">L’opérateur continue de saisir sans réseau</h3>
             <div class="step-body"><p>Hors réseau, l’opérateur continue de travailler : ses saisies attendent dans la file du téléphone et partent dès que le réseau revient. Chacune porte un identifiant unique, créé sur le téléphone. Si une réponse se perd et que la saisie repart, l’application retrouve dans la base la fiche déjà créée au lieu d’en créer une seconde ; si elle ne peut pas vérifier, elle n’écrit rien plutôt que de créer à l’aveugle.</p><p>La file respecte l’ordre des saisies, si bien qu’une erreur passagère, réseau ou serveur, la retient. Une saisie refusée pour de bon, par exemple une donnée invalide, est en revanche mise de côté : les suivantes continuent de partir, et l’erreur reste affichée jusqu’à ce qu’elle soit traitée.</p></div>
             
           </li>
           <li class="step">
-            <h3 class="step-title">Un bandeau qui dit la vérité sur la synchronisation</h3>
+            <h3 class="step-title">Le bandeau de synchronisation est resté vert pendant une panne</h3>
             <div class="step-body"><p>En haut de chaque écran, un bandeau a quatre états : rouge quand des saisies sont en échec, orange hors ligne ou quand la connexion est instable, gris pendant l’envoi, vert quand tout est à jour. Le 6 août, pendant une panne de routage, il est resté vert alors que toutes les requêtes échouaient, parce qu’il tenait tout code 200 pour un succès, même quand la réponse était une page web. Depuis, seule une réponse lisible compte, ce qui écarte aussi les portails Wi-Fi, et le vert est daté, par exemple « À jour · 12:48 ».</p></div>
             
           </li>
           <li class="step">
-            <h3 class="step-title">Un stock calculé, jamais saisi</h3>
+            <h3 class="step-title">Le stock se calcule, personne ne le saisit</h3>
             <div class="step-body"><p>Chaque transformation enregistre une sortie du lot transformé et une entrée dans le lot qui en naît. Le stock est la somme de ces mouvements ; en les remontant, on retrouve de quelles coquilles vient n’importe quel sac.</p><p>Airtable n’a pas de transaction. Une opération coupée à mi-chemin reste donc dans la file et se rejoue sans doublon jusqu’à être complète, et l’application refuse de l’abandonner, car un mouvement manquant fausserait le stock. Les changements d’état secondaires, comme le statut d’une cuve, peuvent échouer sans annuler la saisie principale ; ils sont rattrapés à la tentative suivante ou corrigés à la main.</p></div>
             
           </li>
@@ -201,12 +201,12 @@
         </figure></div>
           </li>
           <li class="step">
-            <h3 class="step-title">Des tests qui rejouent l’atelier, hors ligne compris</h3>
+            <h3 class="step-title">Les tests rejouent l’atelier, réseau coupé</h3>
             <div class="step-body"><p>À chaque envoi de code, l’intégration continue enchaîne le lint, la vérification des types, les tests unitaires (Vitest) et les tests de bout en bout (Playwright), qui rejouent les parcours dans un navigateur. Une partie tourne sur le build de production, service worker actif et réseau coupé, car le mode développement n’installe pas de service worker et ne prouve rien sur le hors-ligne réel. Un test instable n’est jamais déclaré réparé parce qu’il est repassé au vert : la correction doit expliquer pourquoi l’échec est devenu impossible, et dire ce qu’elle ne couvre pas.</p></div>
             
           </li>
           <li class="step">
-            <h3 class="step-title">Des accès protégés et des sauvegardes déjà restaurées</h3>
+            <h3 class="step-title">Les accès sont protégés et les sauvegardes déjà restaurées</h3>
             <div class="step-body"><p>Le code PIN n’est vérifié que côté serveur, où il est haché avec un sel et une clé secrète (HMAC-SHA256) : le téléphone ne détient donc ni ce secret ni la clé de la base. Chaque nuit, les données, le schéma et les photos sont sauvegardés. La restauration a été testée deux fois, la seconde sur une base créée de zéro et suivie d’un parcours complet dans l’application ; un nouveau test est prévu chaque trimestre.</p></div>
             
           </li>
@@ -251,6 +251,7 @@
         <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a> <button type="button" class="foot-copy" data-copy="greg.gargiulo.pro@gmail.com" aria-live="polite">Copier l’adresse</button></li>
         <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
         <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV-EN.pdf" download hreflang="en" lang="en">CV in English (PDF)</a></li>
         
       </ul>
       <ul role="list">

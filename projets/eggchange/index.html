@@ -22,7 +22,7 @@
 <link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=7140851d5a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=f4d169cef3">
 <link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
 <script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
 <script src="../../assets/js/site.js?v=150ceecd4c" defer></script>
@@ -126,7 +126,7 @@
     </div>
     <div class="overview-main">
       <h2 class="label">En bref</h2>
-      <p class="overview-lead">Une application mobile de prise de contacts, que j’ai conçue et développée seul pour l’équipe commerciale de Circul’Egg, d’abord pour le salon Vitafoods Europe 2026, puis pour d’autres salons. Le commercial photographie la carte de visite, résume l’échange à voix haute et qualifie le contact ; Gemini lit la carte et transcrit le mémo, puis la fiche part dans Airtable. Tout s’enregistre sans réseau, et la synchronisation ne crée jamais de doublon.</p>
+      <p class="overview-lead">Une application mobile de prise de contacts, que j’ai conçue et développée pour l’équipe commerciale de Circul’Egg, d’abord pour le salon Vitafoods Europe 2026, puis pour d’autres salons. Le commercial photographie la carte de visite, résume l’échange à voix haute et qualifie le contact ; Gemini lit la carte et transcrit le mémo, puis la fiche part dans Airtable. Tout s’enregistre sans réseau, et la synchronisation ne crée jamais de doublon.</p>
       <h2 class="label">Point de départ</h2>
       <p class="overview-text">Sur un salon, un contact se résume souvent à une carte de visite et à quelques mots notés à la hâte. Le temps de rentrer, le contexte est perdu, et la fiche n’est saisie que des jours plus tard.</p>
       <h3 class="label">Contraintes</h3>
@@ -175,7 +175,7 @@
         </figure></div>
           </li>
           <li class="step">
-            <h3 class="step-title">Une qualification qui suit le contact jusqu’à Airtable</h3>
+            <h3 class="step-title">La qualification suit le contact jusqu’à Airtable</h3>
             <div class="step-body"><p>Provenance, température, profil et action souhaitée se choisissent d’un geste. Les mêmes valeurs servent de filtres dans la liste et de colonnes dans Airtable.</p></div>
             <div class="step-media"><figure class="shot shot--phone" data-motion="time">
           <div class="stage stage--phone" style="--tone:#1f7f72;--on:#fafafa"><div class="handset"><img class="phone" src="../../assets/captures/eggchange/qualification-phone.webp" srcset="../../assets/captures/eggchange/qualification-phone.w480.webp 480w, ../../assets/captures/eggchange/qualification-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"><div class="screen screen--phone"><div class="live live--video" data-src="../../assets/captures/eggchange/fiche-clip.mp4" style="--loop:9.6s"></div></div></div></div>
@@ -188,12 +188,12 @@
             
           </li>
           <li class="step">
-            <h3 class="step-title">Une fiche n’est jamais créée deux fois</h3>
+            <h3 class="step-title">Le serveur empêche les fiches en double</h3>
             <div class="step-body"><p>Vérifier dans Airtable qu’une fiche n’existe pas avant de la créer ne suffit pas : deux envois proches font tous deux la vérification avant que le premier ait écrit, et une fiche fraîchement créée n’apparaît pas tout de suite dans les recherches. Avec les renvois de la file hors ligne, cela aurait produit des doublons.</p><p>Le serveur pose donc un verrou atomique dans Firestore : le premier envoi l’obtient et crée la fiche, les suivants attendent son identifiant et le réutilisent. Si une fiche a été supprimée à la main dans Airtable, le verrou la marque comme supprimée, et un envoi tardif ne la recrée jamais.</p></div>
             
           </li>
           <li class="step">
-            <h3 class="step-title">Une carte de visite numérique pour chaque commercial</h3>
+            <h3 class="step-title">Chaque commercial a sa carte de visite numérique</h3>
             <div class="step-body"><p>Le QR code de la carte ouvre une page publique, d’où le visiteur du stand enregistre les coordonnées du commercial dans son propre téléphone.</p></div>
             <div class="step-media"><figure class="shot shot--phone" data-motion="time">
           <div class="stage stage--phone" style="--tone:#1f7f72;--on:#fafafa"><img class="phone" src="../../assets/captures/eggchange/carte-phone.webp" srcset="../../assets/captures/eggchange/carte-phone.w480.webp 480w, ../../assets/captures/eggchange/carte-phone.webp 960w" sizes="(min-width: 900px) 18vw, 44vw" alt="" width="960" height="1929" loading="lazy" decoding="async"></div>
@@ -244,6 +244,7 @@
         <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a> <button type="button" class="foot-copy" data-copy="greg.gargiulo.pro@gmail.com" aria-live="polite">Copier l’adresse</button></li>
         <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
         <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV-EN.pdf" download hreflang="en" lang="en">CV in English (PDF)</a></li>
         
       </ul>
       <ul role="list">

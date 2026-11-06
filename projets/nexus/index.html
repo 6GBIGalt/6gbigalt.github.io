@@ -22,7 +22,7 @@
 <link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=7140851d5a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=f4d169cef3">
 <link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
 <script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
 <script src="../../assets/js/site.js?v=150ceecd4c" defer></script>
@@ -146,7 +146,7 @@
     </div>
     <div class="spec" id="architecture">
       <h2 class="spec-title">Architecture</h2>
-      <div class="spec-text"><p>Le front, en React avec TanStack Start, reste un simple client qui reçoit les réponses au fil de l’eau. Le backend Python (FastAPI) porte l’authentification, les connexions aux outils et des agents LangGraph appuyés sur Mistral, qui choisissent quels outils interroger. Les données des outils s’interrogent en SQL dans DuckDB, les règles tournent dans le code, et le modèle met leurs résultats en mots.</p><p>Les comptes et les données des clients sont dans Supabase ; ChromaDB sert à la recherche sémantique. Neo4j et Graphiti sont en place pour une mémoire datée, qui saurait ce qui était vrai et quand ; ce graphe reste désactivé par défaut. Les quatorze connecteurs passent par un même registre, où chacun déclare son identité, ses capacités et son mode d’authentification. Chaque appel au modèle est tracé dans Langfuse.</p><p>Mes chantiers vivent dans ce backend, en environ 9 000 lignes de Python : le module de détection (règles, notation, délivrance, audit), le moteur d’automatisation (planificateur, webhooks, exécuteur) et le nœud LangGraph qui cadre une automatisation en conversation. S’y ajoutent les garde-fous de l’agent et la piste d’audit. Côté interface, 168 des 186 commits du front sont à mon nom.</p></div>
+      <div class="spec-text"><p>Le front, en React avec TanStack Start, reste un simple client qui reçoit les réponses au fil de l’eau. Le backend Python (FastAPI) gère l’authentification, les connexions aux outils et des agents LangGraph appuyés sur Mistral, qui choisissent quels outils interroger. Les données des outils s’interrogent en SQL dans DuckDB, les règles tournent dans le code, et le modèle met leurs résultats en mots.</p><p>Les comptes et les données des clients sont dans Supabase ; ChromaDB sert à la recherche sémantique. Neo4j et Graphiti sont en place pour une mémoire datée, qui saurait ce qui était vrai et quand ; ce graphe reste désactivé par défaut. Les quatorze connecteurs passent par un même registre, où chacun déclare son identité, ses capacités et son mode d’authentification. Chaque appel au modèle est tracé dans Langfuse.</p><p>Mes chantiers vivent dans ce backend, en environ 9 000 lignes de Python : le module de détection (règles, notation, délivrance, audit), le moteur d’automatisation (planificateur, webhooks, exécuteur) et le nœud LangGraph qui cadre une automatisation en conversation. S’y ajoutent les garde-fous de l’agent et la piste d’audit. Côté interface, 168 des 186 commits du front sont à mon nom.</p></div>
     </div>
     <div class="spec" id="stack">
       <h2 class="spec-title">Stack technique</h2>
@@ -178,8 +178,8 @@
             
           </li>
           <li class="step">
-            <h3 class="step-title">Un score calculé par le programme, puis un filtre contre le bruit</h3>
-            <div class="step-body"><p>Chaque alerte reçoit un score qui pondère l’urgence (60 %) et la valeur (40 %), plafonnée à 50 000 € : au-delà, c’est l’urgence qui départage. Ce calcul est fait par le programme ; le modèle de langage explique, il ne note pas. Les signaux liés au chiffre d’affaires occupent une bande de score à part, toujours au-dessus des constats d’hygiène du CRM : une affaire passe avant un champ mal rempli.</p><p>Un dernier étage décide de ce qui est montré : trois alertes par jour au plus pour chaque entreprise ; une alerte écartée par l’utilisateur ne revient jamais d’elle-même ; une alerte retirée parce que la situation avait disparu attend 24 heures avant de revenir, pour ne pas clignoter. Chaque alerte non montrée est enregistrée avec sa raison, pour qu’on puisse mesurer ce que ce filtre écarte.</p></div>
+            <h3 class="step-title">Le programme calcule le score, puis filtre le bruit</h3>
+            <div class="step-body"><p>Chaque alerte reçoit un score qui pondère l’urgence (60 %) et la valeur (40 %), plafonnée à 50 000 € : au-delà, c’est l’urgence qui départage. Ce calcul est fait par le programme ; le modèle de langage explique, il ne note pas. Les signaux liés au chiffre d’affaires occupent une bande de score à part, toujours au-dessus des constats d’hygiène du CRM : une affaire passe avant un champ mal rempli.</p><p>Un dernier étage décide de ce qui est montré : trois alertes par jour au plus pour chaque entreprise ; une alerte écartée par l’utilisateur ne revient jamais d’elle-même ; une alerte retirée parce que la situation avait disparu attend 24 heures avant de revenir, pour ne pas clignoter. Le programme garde la raison de chaque alerte écartée, pour qu’on puisse mesurer ce que ce filtre écarte.</p></div>
             
           </li>
           <li class="step">
@@ -199,12 +199,12 @@
         </figure></div>
           </li>
           <li class="step">
-            <h3 class="step-title">Un moteur d’automatisation maison à la place d’Activepieces</h3>
+            <h3 class="step-title">Nous avons remplacé Activepieces par un moteur maison</h3>
             <div class="step-body"><p>Nexus exécutait d’abord ses automatisations dans Activepieces, un outil d’automatisation tiers, caché derrière l’agent. Le 18 juin 2026, nous l’avons remplacé par un moteur Python natif, repris d’Onyx, mon agent IA personnel : plus de connexions à synchroniser entre deux systèmes, et un service de moins à exploiter.</p><p>Une étape d’approbation humaine met l’exécution en pause ; à la reprise, les étapes déjà faites sont sautées, et aucune action n’est exécutée deux fois. Le planificateur tourne dans le backend et réserve chaque exécution, pour qu’elle ne parte jamais en double. Les appels externes qui lancent une automatisation (webhooks) sont signés (HMAC-SHA256) et refusés si leur horodatage s’écarte de plus de cinq minutes, ce qui empêche de rejouer un ancien appel ; tout refus reçoit la même réponse, qui ne révèle pas si l’automatisation existe. Une automatisation qui échoue trois fois de suite, ou dont le lancement prévu a plus d’une heure de retard, devient une alerte.</p></div>
             
           </li>
           <li class="step">
-            <h3 class="step-title">Un audit du CRM noté par des règles</h3>
+            <h3 class="step-title">L’audit du CRM est noté par des règles</h3>
             <div class="step-body"><p>Vingt-deux règles écrites dans le programme examinent le CRM : complétude, doublons (repérés par e-mail, téléphone, ou nom et organisation), hygiène, cohérence des dates, conventions de saisie. Un constat n’est retenu qu’à partir de trois occurrences : un ou deux oublis ne font pas une habitude. La note vient de ces règles, et chaque rapport PDF est figé à sa date.</p></div>
             <div class="step-media"><figure class="shot shot--browser" data-motion="time">
           <div class="stage stage--browser" style="--tone:#2f5fd0;--on:#fafafa"><div class="tablet"><div class="screen"><img src="../../assets/captures/nexus/audit.webp" srcset="../../assets/captures/nexus/audit.w480.webp 480w, ../../assets/captures/nexus/audit.w1200.webp 1200w, ../../assets/captures/nexus/audit.webp 2400w" sizes="(min-width: 900px) 62vw, 92vw" alt="" width="2400" height="1350" loading="lazy" decoding="async"><div class="live live--video" data-src="../../assets/captures/nexus/audit-clip.mp4" style="--loop:4s"></div></div></div></div>
@@ -212,12 +212,12 @@
         </figure></div>
           </li>
           <li class="step">
-            <h3 class="step-title">Une grille de contrôle qui note les rapports eux-mêmes</h3>
+            <h3 class="step-title">De 39 à 100 sur 100 : le contrôle des rapports rédigés par le modèle</h3>
             <div class="step-body"><p>Le rapport est rédigé par le modèle à partir des constats. Pour le contrôler, j’ai écrit un programme qui le note sur une grille de 85 points vérifiables (exactitude des montants et des comptages, cohérence, structure, honnêteté, langage), ramenés à une note sur 100. Chacune de ses règles est née d’une erreur que le modèle a réellement commise.</p><p>Le premier audit d’un vrai CRM a obtenu 39 sur 100. La grille y a révélé trois défauts invisibles sur le jeu de test de 19 affaires, dont un montant d’exemple écrit en dur dans le prompt et recopié tel quel dans le rapport. La grille avait aussi ses propres défauts, corrigés le même jour. Une fois le produit et la grille corrigés, le même audit a obtenu 100 sur 100. Cette note vaut pour ce seul CRM.</p></div>
             
           </li>
           <li class="step">
-            <h3 class="step-title">Des tableaux de bord demandés dans le chat</h3>
+            <h3 class="step-title">Les tableaux de bord se demandent dans le chat</h3>
             <div class="step-body"><p>L’utilisateur demande un indicateur, un graphique ou un tableau. L’agent interroge la source connectée en SQL, en un nombre d’étapes plafonné, puis propose un widget, dont la structure est validée avant qu’il rejoigne le tableau de bord. À chaque accès à un widget, le serveur vérifie d’abord que son tableau de bord appartient bien à l’entreprise de l’utilisateur.</p></div>
             <div class="step-media"><figure class="shot shot--browser" data-motion="time">
           <div class="stage stage--browser" style="--tone:#2f5fd0;--on:#fafafa"><div class="tablet"><div class="screen"><img src="../../assets/captures/nexus/dashboards.webp" srcset="../../assets/captures/nexus/dashboards.w480.webp 480w, ../../assets/captures/nexus/dashboards.w1200.webp 1200w, ../../assets/captures/nexus/dashboards.webp 2400w" sizes="(min-width: 900px) 62vw, 92vw" alt="" width="2400" height="1350" loading="lazy" decoding="async"><div class="live live--video" data-src="../../assets/captures/nexus/dashboards-clip.mp4" style="--loop:6.7s"></div></div></div></div>
@@ -225,12 +225,12 @@
         </figure></div>
           </li>
           <li class="step">
-            <h3 class="step-title">Un agent qui ne peut rien écrire seul</h3>
+            <h3 class="step-title">L’agent ne peut rien écrire seul</h3>
             <div class="step-body"><p>Une action qui écrit dans un outil du client n’est jamais exécutée sur la seule décision du modèle. L’appel devient une carte à confirmer ou à annuler, et un seul chemin du code exécute l’écriture : celui qui arrive avec la confirmation de l’utilisateur. Un e-mail ou un document piégé peut tromper le modèle, il ne déclenche aucune écriture sans cette confirmation.</p><p>Tout contenu venu de l’extérieur (documents, résultats d’outils, libellés) est encadré par des balises qui le désignent comme une donnée, et toute balise forgée à l’intérieur est neutralisée. Le SQL écrit par l’agent passe un contrôle de lecture seule, puis s’exécute dans une base DuckDB en mémoire dont l’accès aux fichiers et au réseau est coupé dès l’ouverture.</p></div>
             
           </li>
           <li class="step">
-            <h3 class="step-title">Une trace de chaque exécution, sans les données</h3>
+            <h3 class="step-title">Chaque exécution laisse une trace, sans les données</h3>
             <div class="step-body"><p>Chaque exécution de l’agent entre dans une piste d’audit distincte, prévue pour l’article 12 de l’AI Act. Elle ne garde que des empreintes SHA⁠-⁠256 de l’entrée et de la sortie : on prouve ce qui s’est passé sans conserver de données personnelles. Les lignes sont chaînées entre elles ; la base refuse toute modification, et une suppression, possible pour le droit à l’effacement, rompt la chaîne et se détecte. L’utilisateur peut aussi exporter ses données et effacer son espace en cascade, y compris dans les index de recherche et les fichiers.</p></div>
             
           </li>
@@ -275,6 +275,7 @@
         <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a> <button type="button" class="foot-copy" data-copy="greg.gargiulo.pro@gmail.com" aria-live="polite">Copier l’adresse</button></li>
         <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
         <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV-EN.pdf" download hreflang="en" lang="en">CV in English (PDF)</a></li>
         
       </ul>
       <ul role="list">

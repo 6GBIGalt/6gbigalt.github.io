@@ -22,7 +22,7 @@
 <link rel="preload" href="../../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/geist-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=7140851d5a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=f4d169cef3">
 <link rel="alternate" type="application/json" href="../../portfolio.json" title="Portfolio en JSON">
 <script>try{new Function("a?.b??0");document.documentElement.classList.replace("no-js","js")}catch(e){}</script>
 <script src="../../assets/js/site.js?v=150ceecd4c" defer></script>
@@ -129,7 +129,7 @@
     </div>
     <div class="overview-main">
       <h2 class="label">En bref</h2>
-      <p class="overview-lead">Un exercice de la formation Alegria Academy, que j’ai réalisé seul : reproduire le parcours de Netflix avec FlutterFlow pour l’interface, et Supabase pour la base, l’authentification et le stockage des affiches. La logique est écrite dans la base PostgreSQL : un schéma relationnel, des règles de sécurité au niveau des lignes et des triggers qui complètent les données d’eux-mêmes.</p>
+      <p class="overview-lead">Un exercice de ma formation à l’Alegria Academy : reproduire le parcours de Netflix avec FlutterFlow pour l’interface, et Supabase pour la base, l’authentification et le stockage des affiches. La logique est écrite dans la base PostgreSQL : un schéma relationnel, des règles de sécurité au niveau des lignes et des triggers qui complètent les données d’eux-mêmes.</p>
       <h2 class="label">Point de départ</h2>
       <p class="overview-text">L’exercice imposait un outil sans code pour l’interface. Or une règle posée dans l’interface se contourne en appelant la base directement. J’ai donc placé les règles dans la base.</p>
       <h3 class="label">Contraintes</h3>
@@ -146,7 +146,7 @@
     </div>
     <div class="spec" id="architecture">
       <h2 class="spec-title">Architecture</h2>
-      <div class="spec-text"><p>FlutterFlow génère l’application Flutter. Supabase porte la base PostgreSQL, l’authentification et le stockage des affiches. Les droits sont appliqués dans la base par des politiques RLS, et des triggers complètent les données à l’inscription et à chaque ajout ou modification d’un film.</p><p>La base compte quatre tables : les utilisateurs, liés au compte d’authentification et supprimés avec lui ; les catégories ; les films ; les profils de visionnage. La couleur de chaque film est contrôlée par la base (un code hexadécimal valide ou rien), et deux index servent les listes par catégorie et par date d’ajout.</p></div>
+      <div class="spec-text"><p>FlutterFlow génère l’application Flutter. Supabase fournit la base PostgreSQL, l’authentification et le stockage des affiches. Les droits sont appliqués dans la base par des politiques RLS, et des triggers complètent les données à l’inscription et à chaque ajout ou modification d’un film.</p><p>La base compte quatre tables : les utilisateurs, liés au compte d’authentification et supprimés avec lui ; les catégories ; les films ; les profils de visionnage. La couleur de chaque film est contrôlée par la base (un code hexadécimal valide ou rien), et deux index servent les listes par catégorie et par date d’ajout.</p></div>
     </div>
     <div class="spec" id="stack">
       <h2 class="spec-title">Stack technique</h2>
@@ -193,7 +193,7 @@
         </figure></div>
           </li>
           <li class="step">
-            <h3 class="step-title">Une base qui se complète d’elle-même</h3>
+            <h3 class="step-title">La base complète elle-même les données</h3>
             <div class="step-body"><p>À l’inscription, un trigger crée la fiche de l’utilisateur et son premier profil de visionnage, et un autre reporte ensuite son nom sur ce profil. Un troisième convertit le nom de catégorie envoyé par le formulaire en clé étrangère, car la liste déroulante de FlutterFlow ne manipule que du texte ; un quatrième donne au film une affiche par défaut quand il n’en a pas. L’interface n’a donc rien à calculer.</p></div>
             <div class="step-media"><figure class="shot shot--browser" data-motion="time">
           <div class="stage stage--browser" style="--tone:#a1141b;--on:#fafafa"><div class="tablet" style="--screen:#121414"><img class="is-wide" src="../../assets/captures/netflix-flutterflow/triggers-ui.webp" srcset="../../assets/captures/netflix-flutterflow/triggers-ui.w480.webp 480w, ../../assets/captures/netflix-flutterflow/triggers-ui.webp 1158w" sizes="(min-width: 900px) 62vw, 92vw" alt="" width="1158" height="485" loading="lazy" decoding="async"></div></div>
@@ -241,6 +241,7 @@
         <li><a href="mailto:greg.gargiulo.pro@gmail.com">greg.gargiulo.pro@gmail.com</a> <button type="button" class="foot-copy" data-copy="greg.gargiulo.pro@gmail.com" aria-live="polite">Copier l’adresse</button></li>
         <li><a href="https://www.linkedin.com/in/g-gargiulo/" rel="me">LinkedIn</a></li>
         <li><a href="../../assets/Greg-Gargiulo-CV.pdf" download>CV (PDF)</a></li>
+        <li><a href="../../assets/Greg-Gargiulo-CV-EN.pdf" download hreflang="en" lang="en">CV in English (PDF)</a></li>
         
       </ul>
       <ul role="list">

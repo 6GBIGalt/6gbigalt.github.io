@@ -556,6 +556,13 @@ button {
   visibility: hidden;
   transition: opacity 0.5s var(--ease), visibility 0s 0.5s;
 }
+/* Tablette : une hauteur unique pour la barre de l'accueil, sinon le contenu suivant saute à chaque scène. */
+@media (min-width: 601px) and (max-width: 1100px) {
+  .page-home .reel-bar {
+    min-height: 7.125rem;
+    align-items: flex-start;
+  }
+}
 .no-js .reel-slide:not(:first-child),
 .reel:not(.is-live) .reel-slide:not(:first-child) {
   display: none;
@@ -2490,12 +2497,16 @@ html:has(.viewer[open]) {
   figure.shot .stage:not(.stage--pair) .tablet {
     width: min(90cqw, 150cqh);
   }
-  /* La phrase de résultat reste visible sur téléphone, bornée à deux lignes. */
+  /* Sur téléphone, la phrase de résultat tient en entier, sur une hauteur fixe : la barre ne saute plus d'une scène à l'autre. */
   .reel-outcome {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     overflow: hidden;
+    min-height: calc(3 * 1.45em);
+  }
+  .reel-caption {
+    min-height: calc(3 * 1.45em);
   }
   .hero-title {
     font-size: clamp(2.3rem, 10.6vw, 4rem);
