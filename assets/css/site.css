@@ -1088,6 +1088,26 @@ button {
   margin-top: clamp(1.75rem, 3vw, 2.5rem);
 }
 
+/* Lecteur d'un projet musical : un lien « Écouter », remplacé au clic par le lecteur SoundCloud. */
+.player {
+  margin-top: 1.5rem;
+}
+.player-note {
+  margin: 0.6rem 0 0;
+  font-size: var(--fs-caption);
+  line-height: 1.45;
+  opacity: 0.65;
+}
+.player-frames {
+  display: grid;
+  gap: 0.75rem;
+}
+.player-frames iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
 .artifact {
   margin: 1.75rem 0 0;
 }
@@ -1385,6 +1405,13 @@ button {
   line-height: 1.4;
   letter-spacing: -0.01em;
   text-wrap: pretty;
+}
+/* Liens d'écoute d'un projet musical, sous la phrase de résultat. */
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin: 1.25rem 0 0;
 }
 .shot {
   margin: 0;

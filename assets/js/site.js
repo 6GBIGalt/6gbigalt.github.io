@@ -653,4 +653,33 @@
     b.addEventListener("click", () => openViewer(stage, caption));
     stage.append(b);
   });
+
+  // ------------------------------------------------------------ lecteurs SoundCloud
+  // Le lien « Écouter » d'une décision se remplace, au clic, par le lecteur SoundCloud : rien n'est
+  // chargé de SoundCloud avant. Avec Cmd, Ctrl, Maj ou Alt, il reste un lien ordinaire vers la page.
+  document.querySelectorAll(".player-btn[data-embeds]").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      let embeds;
+      try {
+        embeds = JSON.parse(a.dataset.embeds);
+      } catch {
+        return;
+      }
+      e.preventDefault();
+      const frames = document.createElement("div");
+      frames.className = "player-frames";
+      for (const { src, h, title } of embeds) {
+        const f = document.createElement("iframe");
+        f.src = src;
+        f.title = `Lecteur SoundCloud : ${title}`;
+        f.height = String(h);
+        f.allow = "autoplay; encrypted-media";
+        frames.append(f);
+      }
+      a.closest(".player").replaceChildren(frames);
+      // Le lien a disparu : le focus passe au premier lecteur, pour ne pas le perdre au clavier.
+      frames.querySelector("iframe").focus();
+    });
+  });
 })();

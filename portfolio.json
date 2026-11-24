@@ -5,7 +5,7 @@
   "url": "https://6gbigalt.github.io",
   "email": "greg.gargiulo.pro@gmail.com",
   "linkedin": "https://www.linkedin.com/in/g-gargiulo/",
-  "misAJour": "2026-11-06",
+  "misAJour": "2026-11-24",
   "parcours": [
     {
       "periode": "Janvier 2026 à janvier 2027",
@@ -251,11 +251,11 @@
       "slug": "relances-commerciales",
       "nom": "Sales Army",
       "url": "https://6gbigalt.github.io/projets/relances-commerciales/",
-      "resultat": "Des relances commerciales préparées chaque matin, envoyées par le commercial",
+      "resultat": "Une séquence de relances conçue pour préparer les brouillons du commercial",
       "resume": "Pour l'équipe commerciale de Circul'Egg, j'ai construit sur n8n des workflows branchés sur Pipedrive, Outlook et Notion. Avant un rendez-vous, ils rédigent la fiche de préparation ; après, ils rangent le compte rendu dans le CRM et préparent chaque relance à son échéance, en brouillon dans la boîte Outlook du commercial, qui la relit et l'envoie.",
       "role": "Conception et développement",
       "periode": "Février à août 2026",
-      "statut": "En service",
+      "statut": "Conception terminée",
       "code": "Privé, workflows de l'entreprise",
       "stack": {
         "Automatisation": [
@@ -273,6 +273,37 @@
           "Notion"
         ]
       }
+    },
+    {
+      "slug": "black-milk-records",
+      "nom": "Black Milk Records",
+      "url": "https://6gbigalt.github.io/projets/black-milk-records/",
+      "resultat": "Un label de musique et ses artistes, que j'ai créés de A à Z avec l'IA",
+      "resume": "Black Milk Records est le label de musique que j'ai lancé en 2025. J'ai créé chacun de ses artistes, avec son nom, son genre et son univers : Midas Lumpure joue un blues rock sombre aux arrangements orchestraux, Smoke Gambino Premier fait du rap. L'IA génère la musique et les images ; je décide de tout le reste, de l'identité de chaque artiste jusqu'aux morceaux qui sortent.",
+      "type": "Label de musique, projet personnel",
+      "role": "Direction artistique, écriture et production",
+      "periode": "Depuis juillet 2025",
+      "statut": "En écoute sur SoundCloud",
+      "stack": {
+        "Musique": [
+          "Riffusion",
+          "Suno",
+          "Audacity"
+        ],
+        "Visuels": [
+          "Grok"
+        ],
+        "Écriture et direction artistique": [
+          "Modèles de langage (LLM)"
+        ],
+        "Diffusion": [
+          "SoundCloud"
+        ]
+      },
+      "ecouter": [
+        "https://soundcloud.com/blackmilk-records/graceblackorchid-ep-grace",
+        "https://soundcloud.com/blackmilk-records/sets/smoke-gambino-the-bad-guy-ep"
+      ]
     },
     {
       "slug": "eggchange",
