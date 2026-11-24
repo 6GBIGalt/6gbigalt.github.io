@@ -279,7 +279,7 @@
       "nom": "Black Milk Records",
       "url": "https://6gbigalt.github.io/projets/black-milk-records/",
       "resultat": "Un label de musique et ses artistes, que j'ai créés de A à Z avec l'IA",
-      "resume": "Black Milk Records est le label de musique que j'ai lancé en 2025. J'ai créé chacun de ses artistes, avec son nom, son genre et son univers : Midas Lumpure joue un blues rock sombre aux arrangements orchestraux, Smoke Gambino Premier fait du rap. L'IA génère la musique et les images ; je décide de tout le reste, de l'identité de chaque artiste jusqu'aux morceaux qui sortent.",
+      "resume": "Black Milk Records est le label de musique que j'ai lancé en 2025. J'ai créé chacun de ses artistes, avec son nom, son genre et son univers : Smoke Gambino Premier fait du rap, Midas Lumpure un blues rock sombre aux arrangements orchestraux. L'IA génère la musique et les images ; je décide de tout le reste, de l'identité de chaque artiste jusqu'aux morceaux qui sortent.",
       "type": "Label de musique, projet personnel",
       "role": "Direction artistique, écriture et production",
       "periode": "Depuis juillet 2025",
@@ -301,9 +301,31 @@
         ]
       },
       "ecouter": [
-        "https://soundcloud.com/blackmilk-records/graceblackorchid-ep-grace",
-        "https://soundcloud.com/blackmilk-records/sets/smoke-gambino-the-bad-guy-ep"
+        "https://soundcloud.com/blackmilk-records/sets/smoke-gambino-the-bad-guy-ep",
+        "https://soundcloud.com/blackmilk-records/sets/black-orchid"
       ]
+    },
+    {
+      "slug": "serie-midjourney",
+      "nom": "Série Midjourney",
+      "url": "https://6gbigalt.github.io/projets/serie-midjourney/",
+      "resultat": "Une série d'images créée aux débuts de Midjourney : des silhouettes en noir dans des paysages brumeux",
+      "resume": "En 2022, Midjourney en était à ses premières versions et ne s'utilisait que sur Discord. J'en ai tiré une série d'images pensée comme un seul univers : des silhouettes vêtues de noir dans des paysages vides, avec des formes qui reviennent d'une image à l'autre. J'ai tout fait seul, de la direction artistique au choix des images.",
+      "type": "Série d'images, projet personnel",
+      "role": "Direction artistique et création des images",
+      "periode": "2022",
+      "statut": "Série terminée",
+      "stack": {
+        "Images": [
+          "Midjourney"
+        ],
+        "Accès": [
+          "Discord"
+        ],
+        "Présentation": [
+          "Carrd"
+        ]
+      }
     },
     {
       "slug": "eggchange",

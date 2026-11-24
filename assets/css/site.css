@@ -2211,6 +2211,17 @@ html:has(.viewer[open]) {
   border-radius: 0.6cqw;
 }
 
+/* Photographie d'une série d'images : elle remplit la scène sans recadrage ; l'aplat comble l'écart. */
+.photo {
+  position: absolute;
+  inset: 0;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .art {
   width: min(78cqh, 80cqw);
   aspect-ratio: 1;
