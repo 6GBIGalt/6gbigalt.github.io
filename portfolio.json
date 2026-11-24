@@ -309,8 +309,8 @@
       "slug": "serie-midjourney",
       "nom": "Série Midjourney",
       "url": "https://6gbigalt.github.io/projets/serie-midjourney/",
-      "resultat": "Une série d'images créée aux débuts de Midjourney : des silhouettes en noir dans des paysages brumeux",
-      "resume": "En 2022, Midjourney en était à ses premières versions et ne s'utilisait que sur Discord. J'en ai tiré une série d'images pensée comme un seul univers : des silhouettes vêtues de noir dans des paysages vides, avec des formes qui reviennent d'une image à l'autre. J'ai tout fait seul, de la direction artistique au choix des images.",
+      "resultat": "Une série d'images faite avec les premières versions de Midjourney, autour d'un même univers",
+      "resume": "J'ai créé cette série en 2022, avec les premières versions de Midjourney, quand l'outil ne s'utilisait encore que sur Discord. Toutes les images partagent le même univers : des personnages vêtus de noir, des paysages vides, et des formes qui reviennent d'une image à l'autre.",
       "type": "Série d'images, projet personnel",
       "role": "Direction artistique et création des images",
       "periode": "2022",
@@ -321,9 +321,6 @@
         ],
         "Accès": [
           "Discord"
-        ],
-        "Présentation": [
-          "Carrd"
         ]
       }
     },
