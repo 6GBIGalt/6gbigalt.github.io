@@ -275,6 +275,155 @@
       }
     },
     {
+      "slug": "normaliseur-video",
+      "nom": "Normaliseur vidéo",
+      "url": "https://6gbigalt.github.io/projets/normaliseur-video/",
+      "resultat": "Des vidéos de toutes origines prêtes à monter, sans réglage manuel",
+      "resume": "Un outil macOS pour mon propre usage : il prépare des vidéos de sources différentes avant leur montage dans CapCut. On glisse les fichiers sur l'application ; ils ressortent au même format, avec des couleurs et un volume homogènes, puis chacun est vérifié et le lancement laisse un rapport.",
+      "role": "Conception et développement",
+      "periode": "Octobre 2026",
+      "statut": "Terminé",
+      "code": "Privé",
+      "stack": {
+        "Langages": [
+          "Python",
+          "AppleScript"
+        ],
+        "Vidéo": [
+          "ffmpeg",
+          "ffprobe"
+        ],
+        "Tests": [
+          "unittest"
+        ]
+      }
+    },
+    {
+      "slug": "netflix-flutterflow",
+      "nom": "Clone Netflix",
+      "url": "https://6gbigalt.github.io/projets/netflix-flutterflow/",
+      "resultat": "Une interface FlutterFlow sur une base qui vérifie les droits ligne par ligne",
+      "resume": "Un exercice de ma formation à l'Alegria Academy : reproduire le parcours de Netflix avec FlutterFlow pour l'interface, et Supabase pour la base, l'authentification et le stockage des affiches. La logique est écrite dans la base PostgreSQL : un schéma relationnel, des règles de sécurité au niveau des lignes et des triggers qui complètent les données d'eux-mêmes.",
+      "role": "Conception et développement",
+      "periode": "Octobre 2026",
+      "statut": "Rendu",
+      "code": "Projet pédagogique",
+      "stack": {
+        "Langages": [
+          "Dart",
+          "SQL"
+        ],
+        "Interface": [
+          "FlutterFlow"
+        ],
+        "Données et stockage": [
+          "Supabase (PostgreSQL)",
+          "Supabase Storage"
+        ],
+        "Authentification": [
+          "Supabase Auth"
+        ],
+        "Règles en base": [
+          "Row Level Security",
+          "Triggers PL/pgSQL"
+        ]
+      }
+    },
+    {
+      "slug": "diagnostic-data-ia",
+      "nom": "Diagnostic Data & IA",
+      "url": "https://6gbigalt.github.io/projets/diagnostic-data-ia/",
+      "resultat": "Une feuille de route IA chiffrée et priorisée pour une PME industrielle fictive",
+      "resume": "Un exercice de la formation Alegria Academy, sur un cas fictif : un fabricant de menuiseries de 96 salariés, dont la marge recule, veut savoir ce que l'IA peut lui apporter. J'ai mené le diagnostic, jusqu'à une feuille de route chiffrée de 95 à 195 k€ sur 12 à 18 mois.",
+      "role": "Diagnostic complet, de l'analyse du dossier à la restitution",
+      "periode": "Juillet à août 2026",
+      "statut": "Restitution livrée",
+      "code": "Livrables de formation",
+      "stack": {
+        "Méthode": [
+          "Diag Data IA (Bpifrance)",
+          "Entretiens métier",
+          "Radar de maturité",
+          "Matrice impact et effort"
+        ],
+        "Outils": [
+          "Excel",
+          "PowerPoint",
+          "Loom"
+        ]
+      }
+    },
+    {
+      "slug": "eggchange",
+      "nom": "Egg'Change",
+      "url": "https://6gbigalt.github.io/projets/eggchange/",
+      "resultat": "Un contact de salon enregistré en une photo et un mémo vocal",
+      "resume": "Une application mobile de prise de contacts, que j'ai conçue et développée pour l'équipe commerciale de Circul'Egg, d'abord pour le salon Vitafoods Europe 2026, puis pour d'autres salons. Le commercial photographie la carte de visite, résume l'échange à voix haute et qualifie le contact ; Gemini lit la carte et transcrit le mémo, puis la fiche part dans Airtable. Tout s'enregistre sans réseau, et la synchronisation ne crée jamais de doublon.",
+      "role": "Conception et développement",
+      "periode": "Février à juin 2026",
+      "statut": "En service sur les salons depuis Vitafoods Europe 2026",
+      "code": "Privé",
+      "stack": {
+        "Langages": [
+          "Dart",
+          "JavaScript"
+        ],
+        "Interface": [
+          "Flutter",
+          "Riverpod"
+        ],
+        "Serveur": [
+          "Firebase Cloud Functions (Node.js)"
+        ],
+        "Données et stockage": [
+          "Firestore",
+          "Hive",
+          "Firebase Storage",
+          "Airtable"
+        ],
+        "IA": [
+          "Gemini"
+        ],
+        "Authentification": [
+          "Firebase Auth"
+        ]
+      }
+    },
+    {
+      "slug": "site-factory",
+      "nom": "Site Factory",
+      "url": "https://6gbigalt.github.io/projets/site-factory/",
+      "resultat": "Le site vitrine d'un commerce, produit par un agent de code à partir d'une fiche",
+      "resume": "Une méthode pour produire avec Claude Code les sites vitrines de commerces locaux. Le commerçant remplit une fiche ; l'agent avance ensuite en cinq phases, chacune avec son outil et validée avant la suivante, sous des règles écrites d'avance en performance, accessibilité, référencement local et sécurité. La méthode a servi à réaliser un site d'essai, pour une boulangerie artisanale de Romainville.",
+      "role": "Conception de la méthode et des règles",
+      "periode": "Février 2026",
+      "statut": "Méthode prête, éprouvée sur un site d'essai",
+      "code": "Privé",
+      "stack": {
+        "Langages": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "Agent de code": [
+          "Claude Code"
+        ],
+        "Référencement": [
+          "Schema.org (JSON-LD)",
+          "Open Graph"
+        ],
+        "Outils": [
+          "Firecrawl",
+          "ImageMagick",
+          "Lighthouse",
+          "Formspree"
+        ],
+        "Hébergement": [
+          "Netlify"
+        ]
+      }
+    },
+    {
       "slug": "black-milk-records",
       "nom": "Black Milk Records",
       "url": "https://6gbigalt.github.io/projets/black-milk-records/",
@@ -321,155 +470,6 @@
         ],
         "Accès": [
           "Discord"
-        ]
-      }
-    },
-    {
-      "slug": "eggchange",
-      "nom": "Egg'Change",
-      "url": "https://6gbigalt.github.io/projets/eggchange/",
-      "resultat": "Un contact de salon enregistré en une photo et un mémo vocal",
-      "resume": "Une application mobile de prise de contacts, que j'ai conçue et développée pour l'équipe commerciale de Circul'Egg, d'abord pour le salon Vitafoods Europe 2026, puis pour d'autres salons. Le commercial photographie la carte de visite, résume l'échange à voix haute et qualifie le contact ; Gemini lit la carte et transcrit le mémo, puis la fiche part dans Airtable. Tout s'enregistre sans réseau, et la synchronisation ne crée jamais de doublon.",
-      "role": "Conception et développement",
-      "periode": "Février à juin 2026",
-      "statut": "En service sur les salons depuis Vitafoods Europe 2026",
-      "code": "Privé",
-      "stack": {
-        "Langages": [
-          "Dart",
-          "JavaScript"
-        ],
-        "Interface": [
-          "Flutter",
-          "Riverpod"
-        ],
-        "Serveur": [
-          "Firebase Cloud Functions (Node.js)"
-        ],
-        "Données et stockage": [
-          "Firestore",
-          "Hive",
-          "Firebase Storage",
-          "Airtable"
-        ],
-        "IA": [
-          "Gemini"
-        ],
-        "Authentification": [
-          "Firebase Auth"
-        ]
-      }
-    },
-    {
-      "slug": "normaliseur-video",
-      "nom": "Normaliseur vidéo",
-      "url": "https://6gbigalt.github.io/projets/normaliseur-video/",
-      "resultat": "Des vidéos de toutes origines prêtes à monter, sans réglage manuel",
-      "resume": "Un outil macOS pour mon propre usage : il prépare des vidéos de sources différentes avant leur montage dans CapCut. On glisse les fichiers sur l'application ; ils ressortent au même format, avec des couleurs et un volume homogènes, puis chacun est vérifié et le lancement laisse un rapport.",
-      "role": "Conception et développement",
-      "periode": "Octobre 2026",
-      "statut": "Terminé",
-      "code": "Privé",
-      "stack": {
-        "Langages": [
-          "Python",
-          "AppleScript"
-        ],
-        "Vidéo": [
-          "ffmpeg",
-          "ffprobe"
-        ],
-        "Tests": [
-          "unittest"
-        ]
-      }
-    },
-    {
-      "slug": "site-factory",
-      "nom": "Site Factory",
-      "url": "https://6gbigalt.github.io/projets/site-factory/",
-      "resultat": "Le site vitrine d'un commerce, produit par un agent de code à partir d'une fiche",
-      "resume": "Une méthode pour produire avec Claude Code les sites vitrines de commerces locaux. Le commerçant remplit une fiche ; l'agent avance ensuite en cinq phases, chacune avec son outil et validée avant la suivante, sous des règles écrites d'avance en performance, accessibilité, référencement local et sécurité. La méthode a servi à réaliser un site d'essai, pour une boulangerie artisanale de Romainville.",
-      "role": "Conception de la méthode et des règles",
-      "periode": "Février 2026",
-      "statut": "Méthode prête, éprouvée sur un site d'essai",
-      "code": "Privé",
-      "stack": {
-        "Langages": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
-        "Agent de code": [
-          "Claude Code"
-        ],
-        "Référencement": [
-          "Schema.org (JSON-LD)",
-          "Open Graph"
-        ],
-        "Outils": [
-          "Firecrawl",
-          "ImageMagick",
-          "Lighthouse",
-          "Formspree"
-        ],
-        "Hébergement": [
-          "Netlify"
-        ]
-      }
-    },
-    {
-      "slug": "diagnostic-data-ia",
-      "nom": "Diagnostic Data & IA",
-      "url": "https://6gbigalt.github.io/projets/diagnostic-data-ia/",
-      "resultat": "Une feuille de route IA chiffrée et priorisée pour une PME industrielle fictive",
-      "resume": "Un exercice de la formation Alegria Academy, sur un cas fictif : un fabricant de menuiseries de 96 salariés, dont la marge recule, veut savoir ce que l'IA peut lui apporter. J'ai mené le diagnostic, jusqu'à une feuille de route chiffrée de 95 à 195 k€ sur 12 à 18 mois.",
-      "role": "Diagnostic complet, de l'analyse du dossier à la restitution",
-      "periode": "Juillet à août 2026",
-      "statut": "Restitution livrée",
-      "code": "Livrables de formation",
-      "stack": {
-        "Méthode": [
-          "Diag Data IA (Bpifrance)",
-          "Entretiens métier",
-          "Radar de maturité",
-          "Matrice impact et effort"
-        ],
-        "Outils": [
-          "Excel",
-          "PowerPoint",
-          "Loom"
-        ]
-      }
-    },
-    {
-      "slug": "netflix-flutterflow",
-      "nom": "Clone Netflix",
-      "url": "https://6gbigalt.github.io/projets/netflix-flutterflow/",
-      "resultat": "Une interface FlutterFlow sur une base qui vérifie les droits ligne par ligne",
-      "resume": "Un exercice de ma formation à l'Alegria Academy : reproduire le parcours de Netflix avec FlutterFlow pour l'interface, et Supabase pour la base, l'authentification et le stockage des affiches. La logique est écrite dans la base PostgreSQL : un schéma relationnel, des règles de sécurité au niveau des lignes et des triggers qui complètent les données d'eux-mêmes.",
-      "role": "Conception et développement",
-      "periode": "Octobre 2026",
-      "statut": "Rendu",
-      "code": "Projet pédagogique",
-      "stack": {
-        "Langages": [
-          "Dart",
-          "SQL"
-        ],
-        "Interface": [
-          "FlutterFlow"
-        ],
-        "Données et stockage": [
-          "Supabase (PostgreSQL)",
-          "Supabase Storage"
-        ],
-        "Authentification": [
-          "Supabase Auth"
-        ],
-        "Règles en base": [
-          "Row Level Security",
-          "Triggers PL/pgSQL"
         ]
       }
     }
